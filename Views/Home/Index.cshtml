@@ -1,0 +1,32 @@
+﻿@model SSCASPEL.Models.Usuario
+@{  
+    ViewData["Title"] = "Home Page "+ViewBag.Empresa;
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <h1> @Html.DisplayFor(Model=> Model.Nombre)</h1>
+    <h1>to</h1>
+    <h1>@ViewBag.Empresa</h1>
+    <!--/* <table>
+             @* // @foreach (var item in Model)
+                {
+
+                    <tr>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.DESCR)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.CVE_ART)
+                        </td>
+
+
+                    </tr>
+                }
+    *@
+                </table>
+            */-->
+
+
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>

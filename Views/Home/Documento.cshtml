@@ -1,0 +1,299 @@
+﻿@model SSCASPEL.Models.DocumentoRev
+
+@{
+    ViewData["Title"] = "Documento";
+    Layout = "~/Views/Home/Shared/_IndexLayout.cshtml";
+}
+
+@{
+    string tipo = "";
+    switch (Model.Encabezado.Tipo)
+    {
+
+        case "C":
+            tipo = "Cotizacion";
+            break;
+        case "P":
+            tipo = "Pedido";
+            break;
+        case "F":
+            tipo = "Factura";
+            break;
+        case "D":
+            tipo = "Devolucion";
+            break;
+        default: break;
+
+    }
+
+    <h1>@tipo</h1>
+}
+<div>
+    <h4>Documento a revisar</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            Docto SAE
+        </dt>
+        <dd class="col-sm-2">
+            @Html.DisplayFor(model => model.Encabezado.Cvedoc)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Encabezado.Tipo)
+        </dt>
+        <dd class="col-sm-6">
+            @Html.DisplayFor(model => model.Encabezado.Tipo)
+        </dd>
+
+        <dt class="col-sm-2">
+            Id Cliente
+        </dt>
+        <dd class="col-sm-2">
+            @Html.DisplayFor(model => model.Encabezado.Idclie)
+        </dd>
+        <dt class="col-sm-2">
+            Cliente
+        </dt>
+        <dd class="col-sm-6">
+            @Html.DisplayFor(model => model.Encabezado.Cliente)
+        </dd>
+
+        <dt class="col-sm-2">
+            Nombre
+        </dt>
+        <dd class="col-sm-2">
+            @Html.DisplayFor(model => model.Encabezado.Nombreclie)
+        </dd>
+        <dt class="col-sm-2">
+            NIT
+        </dt>
+        <dd class="col-sm-6">
+            @Html.DisplayFor(model => model.Encabezado.Rfc)
+        </dd>
+
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Encabezado.Fecha)
+        </dt>
+        <dd class="col-sm-2">
+            @Html.DisplayFor(model => model.Encabezado.Fecha)
+        </dd>
+        <dt class="col-sm-2">
+            Fecha entrega
+        </dt>
+        <dd class="col-sm-6">
+            @Html.DisplayFor(model => model.Encabezado.Fechaen)
+        </dd>
+
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Encabezado.Vendedor)
+        </dt>
+        <dd class="col-sm-2">
+            @Html.DisplayFor(model => model.Encabezado.Vendedor)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Encabezado.Esquema)
+        </dt>
+        <dd class="col-sm-6">
+            @Html.DisplayFor(model => model.Encabezado.Esquema)
+        </dd>
+
+        <dt class="col-sm-2">
+            Orden
+        </dt>
+        <dd class="col-sm-2">
+            @Html.DisplayFor(model => model.Encabezado.Supedido)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Encabezado.Condicion)
+        </dt>
+        <dd class="col-sm-6">
+            @Html.DisplayFor(model => model.Encabezado.Condicion)
+        </dd>
+
+        <dt class="col-sm-2">
+            Cantidad Total
+        </dt>
+        <dd class="col-sm-2">
+            @Html.DisplayFor(model => model.Encabezado.Canttot)
+        </dd>
+        <dt class="col-sm-2">
+            Impuesto
+        </dt>
+        <dd class="col-sm-6">
+            @{
+                var impuesto = 0.0;
+                if (Model.Encabezado.Impuesto1 != 0)
+                {
+                    impuesto = Model.Encabezado.Impuesto1;
+                }
+                else if (Model.Encabezado.Impuesto2 != 0)
+                {
+                    impuesto = Model.Encabezado.Impuesto2;
+                }
+                if (Model.Encabezado.Impuesto3 != 0)
+                {
+                    impuesto = Model.Encabezado.Impuesto3;
+                }
+                if (Model.Encabezado.Impuesto4 != 0)
+                {
+                    impuesto = Model.Encabezado.Impuesto4;
+                }
+            }
+            @String.Format("{0:N2}", @impuesto)
+        </dd>
+
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Encabezado.Descuento)
+        </dt>
+        <dd class="col-sm-2">
+            @Html.DisplayFor(model => model.Encabezado.Descuento)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Encabezado.Total)
+        </dt>
+        <dd class="col-sm-6">
+            @Html.DisplayFor(model => model.Encabezado.Total)
+        </dd>
+
+        <dt class="col-sm-2">
+            Id usuario
+        </dt>
+        <dd class="col-sm-2">
+            @Html.DisplayFor(model => model.Encabezado.Iduser)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Encabezado.Direntrega)
+        </dt>
+        <dd class="col-sm-6">
+            @Html.DisplayFor(model => model.Encabezado.Direntrega)
+        </dd>
+
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Encabezado.Transporte)
+        </dt>
+        <dd class="col-sm-2">
+            @Html.DisplayFor(model => model.Encabezado.Transporte)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Encabezado.Observacion)
+        </dt>
+        <dd class="col-sm-6">
+            @Html.DisplayFor(model => model.Encabezado.Observacion)
+        </dd>
+        <dd class="col-sm-2">
+            @Html.DisplayFor(model => model.Encabezado.Uidev)
+        </dd>
+    </dl>
+</div>
+<div class="table-responsive">
+    <div class="col-12">
+        <table class="table table-sm table-striped table-hover border-bottom">
+            <thead>
+                <tr>
+                    <th>
+                        Cantidad
+                    </th>
+                    <th class="d-none d-lg-table-cell">
+                        Codigo
+                    </th>
+                    <th class="d-none d-lg-table-cell">
+                        Descripcion
+                    </th>
+                    <th>
+                        Precio Unitario
+                    </th>
+                    <th>
+                        Total Partida
+                    </th>
+                    <th class="d-none d-lg-table-cell">
+                        Apartado
+                    </th>
+                    <th class="d-none d-lg-table-cell">
+                        Observacion
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model.Detalle)
+                {
+                    <tr>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Cantidad)
+                        </td>
+                        <td class="d-none d-lg-table-cell">
+                            @Html.DisplayFor(modelItem => item.Cveart)
+                        </td>
+
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Descr)
+                        </td>
+                        <td align="right">
+                            @Html.DisplayFor(modelItem => item.Preciou)
+                        </td>
+                        <td align="right">
+                            @Html.DisplayFor(modelItem => item.Totalpartida)
+                        </td>
+                        <td align="center">
+                            @{
+                                var apartadoes = "NO";
+                                if (item.Apartado == 1)
+                                {
+                                    apartadoes = "SI";
+                                }
+                            }
+                            @apartadoes
+                        </td>
+                        <td align="right">
+                            @Html.DisplayFor(modelItem => item.Observacion)
+                        </td>
+
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
+<br />
+<h4>Seguimiento del documento</h4>
+<div>
+    <table class="table table-sm table-striped table-hover border-bottom">
+        <thead>
+            <tr>
+                <th>Tipo</th>
+                <th>Documento</th>
+                <th>Fecha</th>
+                <th>Estado</th>
+            </tr>
+        </thead>
+        <tbody>
+
+
+            @{
+
+                if (ViewData["seguimiento"] != null)
+                {
+
+
+                    foreach (DocSeguimiento docs in ViewData["seguimiento"] as IEnumerable<DocSeguimiento>)
+                    {
+                        <tr>
+                            <td>@docs.tdoc</td>
+                            <td>@docs.cve_doc</td>
+                            <td>@docs.fecha</td>
+                            <td>@docs.estado</td>
+                        </tr>
+
+
+                    }
+                }
+            }
+
+
+        </tbody>
+    </table>
+
+</div>
+
+<div>
+    <a href='javascript:history.go(-1)'>Back to List</a>
+</div>

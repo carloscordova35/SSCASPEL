@@ -1,0 +1,111 @@
+﻿@model SSCASPEL.Models.Sustitutiva
+
+@{
+    ViewData["Title"] = "CreaPolitica";
+    Layout = "~/Views/Home/Shared/_IndexLayout.cshtml";
+}
+
+<h1>CreaPolitica</h1>
+
+<h4>Sustitutiva</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="CreaPoliticaS">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Politica" class="control-label"></label>
+                <input asp-for="Politica" class="form-control" />
+                <span asp-validation-for="Politica" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Descripcion" class="control-label"></label>
+                <input asp-for="Descripcion" class="form-control" />
+                <span asp-validation-for="Descripcion" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="St" class="control-label"></label>
+                <input asp-for="St" class="form-control" />
+                <span asp-validation-for="St" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Cve_ini" class="control-label"></label>
+                <input asp-for="Cve_ini" class="form-control" />
+                <span asp-validation-for="Cve_ini" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Cve_fin" class="control-label"></label>
+                <input asp-for="Cve_fin" class="form-control" />
+                <span asp-validation-for="Cve_fin" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Lin_prod" class="control-label"></label>
+                <input asp-for="Lin_prod" class="form-control" />
+                <span asp-validation-for="Lin_prod" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Vol_min" class="control-label"></label>
+                <input asp-for="Vol_min" class="form-control" />
+                <span asp-validation-for="Vol_min" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Clie_d" class="control-label"></label>
+                <input asp-for="Clie_d" class="form-control" />
+                <span asp-validation-for="Clie_d" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Clie_h" class="control-label"></label>
+                <input asp-for="Clie_h" class="form-control" />
+                <span asp-validation-for="Clie_h" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Clas_clie" class="control-label"></label>
+                <input asp-for="Clas_clie" class="form-control" />
+                <span asp-validation-for="Clas_clie" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Fechad" class="control-label"></label>
+                <input asp-for="Fechad" type="date" class="form-control" />
+                <span asp-validation-for="Fechad" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Fechah" class="control-label"></label>
+                <input asp-for="Fechah"  type="date"  class="form-control" />
+                <span asp-validation-for="Fechah" class="text-danger"></span>
+            </div>
+            <div hidden class="form-group">
+                <label asp-for="T_pol" class="control-label"></label>
+                <input asp-for="T_pol" value="S" class="form-control" />
+                <span asp-validation-for="T_pol" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Prc_mon" class="control-label"></label>
+                <input asp-for="Prc_mon" class="form-control" />
+                <span asp-validation-for="Prc_mon" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Lista_prec" class="control-label"></label>
+                <input asp-for="Lista_prec" class="form-control" />
+                <span asp-validation-for="Lista_prec" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Val" class="control-label"></label>
+                <input asp-for="Val" class="form-control" />
+                <span asp-validation-for="Val" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Cvezona" class="control-label"></label>
+                <input asp-for="Cvezona" class="form-control" />
+                <span asp-validation-for="Cvezona" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+

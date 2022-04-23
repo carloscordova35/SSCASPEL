@@ -1,0 +1,99 @@
+﻿@model IEnumerable<SSCASPEL.Models.Producto>
+
+@{
+    ViewData["Title"] = "Productos";
+    Layout = "~/Views/Home/Shared/_IndexLayout.cshtml";
+}
+
+<h1>Productos</h1>
+
+<p>
+    <a asp-action="CreaProducto">Crear nuevo</a>
+</p>
+<br />
+
+<p>
+    @using (Html.BeginForm())
+    {
+<p>
+    Buscar producto: @Html.TextBox("search","",new { @class = "classname", autocomplete = "off" })
+    <input type="submit" value="Search" />
+</p>
+}
+    </p>
+    <div class="table-responsive">
+        <div class="col-12">
+            <table class="table table-sm table-striped table-hover border-bottom">
+                <thead>
+                    <tr>
+                        <th>
+                            @Html.DisplayNameFor(model => model.Codigo)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.Barcode)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.Descripcion)
+                        </th>
+                        <th hidden>
+                            @Html.DisplayNameFor(model => model.Esquema)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.Precio)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.Tipo)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.Existencia)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.Descrlinea)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.Sminimo)
+                        </th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model)
+                    {
+                        <tr>
+                            <td>
+                                <a asp-action="Producto" asp-route-id="@item.Codigo">@item.Codigo</a>
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.Barcode)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.Descripcion)
+                            </td>
+                            <td hidden>
+                                @Html.DisplayFor(modelItem => item.Esquema)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.Precio)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.Tipo)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.Existencia)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.Descrlinea)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.Sminimo)
+                            </td>
+                            <td>
+                                <a asp-action="Producto" asp-route-id="@item.Codigo">Detalle</a> |
+                                <a asp-action="EditProd" asp-route-id="@item.Codigo">Editar</a>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>

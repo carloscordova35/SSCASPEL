@@ -1,0 +1,97 @@
+﻿@model IEnumerable<SSCASPEL.Models.Cobro>
+
+@{
+    ViewData["Title"] = "Cobros";
+    Layout = "~/Views/Home/Shared/_IndexLayout.cshtml";
+}
+
+<h1>Cobros</h1>
+@using (Html.BeginForm())
+{
+    <p>
+        Buscar por fecha: @Html.TextBox("fecha", "", new { @type = "date", @class = "classname", autocomplete = "off" })
+        @Html.TextBox("fecha2", "", new { @type = "date", @class = "classname", autocomplete = "off" })
+        <input type="submit" value="Filtrar" />
+    </p>
+}
+<div class="table-responsive">
+    <div class="col-12">
+        <table class="table table-sm table-striped table-hover border-bottom">
+            <thead>
+                <tr>
+                    <th>
+                        Recibo
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Idclie)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Cliente)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Fecha)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Forma)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Referencia)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Bancocq)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Bancoin)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Total)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Fechaws)
+                    </th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>
+                            <a asp-action="Recibo" asp-route-id="@item.Id">@item.Id</a>
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Idclie)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Cliente)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Fecha)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Forma)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Referencia)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Bancocq)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Bancoin)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Total)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Fechaws)
+                        </td>
+                        <td>
+                            <a asp-action="Recibo" asp-route-id="@item.Id">Detalle</a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>

@@ -1,0 +1,159 @@
+﻿@model SSCASPEL.Models.ProductoModel
+
+@{
+    ViewData["Title"] = "Producto";
+    Layout = "~/Views/Home/Shared/_IndexLayout.cshtml";
+}
+
+<h1>Producto</h1>
+
+<div>
+    <h4>Detalle del producto @Html.DisplayFor(model => model.prod.Codigo)</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.prod.Codigo)
+        </dt>
+        <dd class="col-sm-2">
+            @Html.DisplayFor(model => model.prod.Codigo)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.prod.Barcode)
+        </dt>
+        <dd class="col-sm-6">
+            @Html.DisplayFor(model => model.prod.Barcode)
+        </dd>
+
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.prod.Descripcion)
+        </dt>
+        <dd class="col-sm-2">
+            @Html.DisplayFor(model => model.prod.Descripcion)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.prod.Esquema)
+        </dt>
+        <dd class="col-sm-6">
+            @Html.DisplayFor(model => model.prod.Esquema)
+        </dd>
+
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.prod.Precio)
+        </dt>
+        <dd class="col-sm-2">
+            @Html.DisplayFor(model => model.prod.Precio)
+        </dd>
+        <dt class="col-sm-2">
+            Con serie?
+        </dt>
+        <dd class="col-sm-6">
+            @Html.DisplayFor(model => model.prod.Conserie)
+        </dd>
+
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.prod.Tipo)
+        </dt>
+        <dd class="col-sm-2">
+            @Html.DisplayFor(model => model.prod.Tipo)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.prod.Existencia)
+        </dt>
+        <dd class="col-sm-6">
+            @Html.DisplayFor(model => model.prod.Existencia)
+        </dd>
+
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.prod.Linea)
+        </dt>
+        <dd class="col-sm-2">
+            @Html.DisplayFor(model => model.prod.Linea)
+        </dd>
+        <dt class="col-sm-2">
+            Descripcion de linea
+        </dt>
+        <dd class="col-sm-6">
+            @Html.DisplayFor(model => model.prod.Descrlinea)
+        </dd>
+
+        <dt class="col-sm-2">
+            Stock Minimo
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.prod.Sminimo)
+        </dd>
+    </dl>
+    <p>
+        <!--      <a asp-action="AnadirUnidad">Agregar otra unidad de medida</a>--->
+
+
+        <a href="@Url.Action("AgreUnMed", "Home",
+new { codigo = Model.prod.Codigo.ToString() })" ,
+           target="_blank" type="submit" id="runReport" class="button Secondary">
+            Agregar nueva unidad de medida
+        </a>
+    </p>
+    <div class="table-responsive">
+        <div class="col-12">
+            <table class="table table-sm table-striped table-hover border-bottom">
+                <thead>
+                    <tr>
+                        <th>
+                            Nivel
+                        </th>
+                        <th class="d-none d-lg-table-cell">
+                            Unidad
+                        </th>
+                        <th class="d-none d-lg-table-cell">
+                            Cantidad por unidad
+                        </th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                    @foreach (var item in Model.unmd)
+                    {
+                        <tr>
+
+                            <td class="d-none d-lg-table-cell">
+                                @item.Nivel
+                            </td>
+                            <td class="d-none d-lg-table-cell">
+                                @item.Unmed
+                            </td>
+                            <td>
+                                @item.Unidades
+                            </td>
+
+                            <td>
+                                <a asp-action="EliminaPres" asp-route-id="@item.Id">Eliminar</a>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <p>
+        <a asp-action="CreateImag" asp-route-id="@Model.prod.Codigo">Subir imagen</a>
+    </p>
+    <br />
+    <fieldset>
+        <legend style="color:orangered">Catalogo de imagenes</legend>
+        @foreach (var items in Model.imgn)
+        {
+        <div class="col-lg-3 col-md-4 col-sm-6">
+            <a href="~/image/@items.ImageName" class="thumbnail">
+                <p>@items.Title</p>
+                <img src="~/image/@items.ImageName" style="max-width:600px;width:100%" />
+                <p><a asp-action="DeleImag" asp-route-id="@items.ImageId">Eliminar imagen</a></p>
+            </a>
+        </div>
+        }
+    </fieldset>
+</div>
+    <div>
+        <a asp-action="EditProd" asp-route-id="@Model.prod.Codigo">Edit</a> |
+        <a asp-action="Productos">Back to List</a>
+    </div>

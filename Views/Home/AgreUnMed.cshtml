@@ -1,0 +1,62 @@
+﻿@model SSCASPEL.Models.InvePresentacion
+
+@{
+    ViewData["Title"] = "Unidad de medida";
+    Layout = "~/Views/Home/Shared/_IndexLayout.cshtml";
+}
+
+@if (null != ViewBag.Processed && (bool)ViewBag.Processed == true)
+{
+<script>
+    window.close();
+</script>
+}
+<h1>Agregando nueva unidad al producto</h1>
+
+<h4></h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="AgregaUMN">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="Id" />
+            <div class="form-group">
+                <label asp-for="Codigo" class="control-label"></label>
+                <input asp-for="Codigo" class="form-control" ReadOnly />
+                <span asp-validation-for="Codigo" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Unmed" class="control-label"></label>
+                <!-- <input asp-for="Unmed" class="form-control" />
+                <span asp-validation-for="Unmed" class="text-danger"></span>-->
+
+                <select asp-for="Unmed">
+                    @{
+                        var unidades = ViewData["unidades"] as IEnumerable<UMed>;
+
+                        foreach (UMed umd in unidades)
+                        {
+                            <option value="@umd.Id">@umd.Unmed</option>
+                        }
+                    }
+                </select>
+            </div>
+            <div class="form-group">
+                <label asp-for="Univenta" class="control-label"></label>
+                <input asp-for="Univenta" class="form-control" />
+                <span asp-validation-for="Univenta" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Agregar" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

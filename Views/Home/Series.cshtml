@@ -1,0 +1,72 @@
+﻿@model IEnumerable<SSCASPEL.Models.Series>
+
+@{
+    ViewData["Title"] = "Series";
+    Layout = "~/Views/Home/Shared/_IndexLayout.cshtml";
+}
+
+<h1>Series</h1>
+
+<p>
+    <a asp-action="AgregaSerie">Crear nueva serie</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Serie)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Tipodoc)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Concai)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Cai)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Fechalim)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Folioi)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Foliof)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Serie)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Tipodoc)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Concai)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Cai)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Fechalim)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Folioi)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Foliof)
+            </td>
+            <td>
+                <a asp-action="EditaSerie" asp-route-id="@item.Id">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
+                <a asp-action="DelSerie" asp-route-id="@item.Id">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

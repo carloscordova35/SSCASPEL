@@ -1,0 +1,118 @@
+﻿@model IEnumerable<SSCASPEL.Models.Docto>
+
+@{
+    ViewData["Title"] = "Pedidos";
+}
+<div>
+    <h1>Pedidos</h1>
+
+
+    
+        @using (Html.BeginForm())
+        {
+    <p>
+        Buscar por fecha: @Html.TextBox("fecha", "", new { @type = "date", @class = "classname", autocomplete = "off" })
+        @Html.TextBox("fecha2", "", new { @type = "date", @class = "classname", autocomplete = "off" })
+        <input type="submit" value="Filtrar" />
+    </p>
+    }
+        <div class="table-responsive">
+            <div class="col-12">
+                <table class="table table-sm table-striped table-hover border-bottom">
+                    <thead>
+                        <tr>
+                            <th>
+                                Registro
+                            </th>
+                            <th>
+                                Docto SAE
+                            </th>
+                            <th class="d-none d-lg-table-cell">
+                                Tipo
+                            </th>
+                            <th class="d-none d-lg-table-cell">
+                                Id Cliente
+                            </th>
+                            <th>
+                                Cliente
+                            </th>
+                            <th>
+                                Nombre
+                            </th>
+                            <th class="d-none d-lg-table-cell">
+                                NIT
+                            </th>
+                            <th>
+                                Fecha
+                            </th>
+                            <th class="d-none d-lg-table-cell">
+                                Fecha entrega
+                            </th>
+                            <th class="d-none d-lg-table-cell">
+                                Vendedor
+                            </th>
+                            <th class="d-none d-lg-table-cell">
+                                Condicion
+                            </th>
+                            <th>
+                                Total
+                            </th>
+                            <th class="d-none d-lg-table-cell">
+                                Usuario
+                            </th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var item in Model)
+                        {
+                            <tr>
+                                <td class="d-none d-lg-table-cell">
+                                    @Html.DisplayFor(modelItem => item.Id)
+                                </td>
+                                <td>
+                                    <a asp-action="Documento" asp-route-id="@item.Id">@item.Cvedoc</a>
+                                </td>
+                                <td class="d-none d-lg-table-cell">
+                                    @Html.DisplayFor(modelItem => item.Tipo)
+                                </td>
+                                <td class="d-none d-lg-table-cell">
+                                    @Html.DisplayFor(modelItem => item.Idclie)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.Cliente)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.Nombreclie)
+                                </td>
+                                <td class="d-none d-lg-table-cell">
+                                    @Html.DisplayFor(modelItem => item.Rfc)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.Fecha)
+                                </td>
+                                <td class="d-none d-lg-table-cell">
+                                    @Html.DisplayFor(modelItem => item.Fechaen)
+                                </td>
+                                <td class="d-none d-lg-table-cell">
+                                    @Html.DisplayFor(modelItem => item.Vendedor)
+                                </td>
+                                <td class="d-none d-lg-table-cell">
+                                    @Html.DisplayFor(modelItem => item.Condicion)
+                                </td>
+                                <td align="right">
+                                    @Html.DisplayFor(modelItem => item.Total)
+                                </td>
+                                <td class="d-none d-lg-table-cell">
+                                    @Html.DisplayFor(modelItem => item.Iduser)
+                                </td>
+                                <td>
+                                    <a asp-action="Documento" asp-route-id="@item.Id">Detalles</a>
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>

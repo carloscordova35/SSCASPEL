@@ -1,0 +1,16 @@
+{
+  "dependencies": {
+    "mssql2": {
+      "resourceId": "/subscriptions/[parameters('subscriptionId')]/resourcegroups/[parameters('resourceGroupName')]/providers/Microsoft.Sql/servers/sscaspeldbserver/databases/SSCASPEL_db",
+      "type": "mssql.azure",
+      "connectionId": "ConnectionStrings:Conexion",
+      "secretStore": "AzureAppSettings"
+    },
+    "mssql3": {
+      "resourceId": "/subscriptions/[parameters('subscriptionId')]/resourceGroups/[parameters('resourceGroupName')]/providers/Microsoft.Sql/servers/sscaspeldbserver/databases/SSCASPEL_db",
+      "type": "mssql.azure",
+      "connectionId": "ConnectionStrings:ConexionAspel",
+      "secretStore": "AzureAppSettings"
+    }
+  }
+}

@@ -1,0 +1,132 @@
+﻿@model IEnumerable<SSCASPEL.Models.Sustitutiva>
+
+@{
+    ViewData["Title"] = "Politicas";
+    Layout = "~/Views/Home/Shared/_IndexLayout.cshtml";
+}
+
+<h1>Politicas</h1>
+
+<p>
+    <a asp-action="CreaPolitica">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Politica)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Descripcion)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.St)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Cve_ini)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Cve_fin)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Lin_prod)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Vol_min)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Clie_d)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Clie_h)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Clas_clie)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Fechad)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Fechah)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.T_pol)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Prc_mon)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Lista_prec)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Val)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Cvezona)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Politica)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Descripcion)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.St)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Cve_ini)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Cve_fin)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Lin_prod)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Vol_min)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Clie_d)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Clie_h)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Clas_clie)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Fechad)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Fechah)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.T_pol)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Prc_mon)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Lista_prec)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Val)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Cvezona)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

@@ -1,0 +1,204 @@
+﻿@model SSCASPEL.Models.Docto
+
+@{
+    ViewData["Title"] = "Documento " + @Html.DisplayFor(model => model.Tipo);
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <header>
+        <h1>SSC Movil</h1>
+    </header>
+    <div>
+        <h2>Documento</h2>
+    </div>
+    <div class="container">
+        <h2>Rounded Corners</h2>
+        <p>The .rounded class adds rounded corners to an image:</p>
+
+        <dl class="row">
+            <dt class="col-md-2">
+                @Html.DisplayNameFor(model => model.Cvedoc)
+            </dt>
+            <dd class="col-md-3">
+                @Html.DisplayFor(model => model.Cvedoc)
+            </dd>
+            <dt class="colmd-3">
+                @Html.DisplayNameFor(model => model.Tipo)
+            </dt>
+            <dd class="col-md-4">
+                @Html.DisplayFor(model => model.Tipo)
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.Idclie)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.Idclie)
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.Cliente)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.Cliente)
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.Nombreclie)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.Nombreclie)
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.Rfc)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.Rfc)
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.Fecha)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.Fecha)
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.Fechaen)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.Fechaen)
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.Vendedor)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.Vendedor)
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.Esquema)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.Esquema)
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.Supedido)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.Supedido)
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.Condicion)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.Condicion)
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.Observacion)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.Observacion)
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.Transporte)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.Transporte)
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.Direntrega)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.Direntrega)
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.Clocation)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.Clocation)
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.Estado)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.Estado)
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.Fechaws)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.Fechaws)
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.Canttot)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.Canttot)
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.Impuesto1)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.Impuesto1)
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.Impuesto2)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.Impuesto2)
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.Impuesto3)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.Impuesto3)
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.Impuesto4)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.Impuesto4)
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.Descuento)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.Descuento)
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.Total)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.Total)
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.Iduser)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.Iduser)
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.Noalmacen)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.Noalmacen)
+            </dd>
+        </dl>
+    </div>
+
+</body>
+</html>

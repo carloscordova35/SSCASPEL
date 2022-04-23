@@ -1,0 +1,101 @@
+﻿@model SSCASPEL.Models.Cliente
+
+@{
+    ViewData["Title"] = "CreateClie";
+    Layout = "~/Views/Home/Shared/_IndexLayout.cshtml";
+}
+
+<h1>CreateClie</h1>
+
+<h4>Cliente</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="CreaCliente">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div hidden class="form-group">
+                <label asp-for="Idsae" class="control-label"></label>
+                <input asp-for="Idsae" value=" " class="form-control" />
+                <span asp-validation-for="Idsae" class="text-danger"></span>
+            </div>
+            <div hidden class="form-group">
+                <label asp-for="Estado" class="control-label"></label>
+                <input asp-for="Estado" value="A" class="form-control" />
+                <span asp-validation-for="Estado" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Nombre" class="control-label"></label>
+                <input asp-for="Nombre" class="form-control" />
+                <span asp-validation-for="Nombre" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Rfc" class="control-label"></label>
+                <input asp-for="Rfc" class="form-control" />
+                <span asp-validation-for="Rfc" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Direccion" class="control-label"></label>
+                <input asp-for="Direccion" class="form-control" />
+                <span asp-validation-for="Direccion" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Telefono" class="control-label"></label>
+                <input asp-for="Telefono" class="form-control" />
+                <span asp-validation-for="Telefono" class="text-danger"></span>
+            </div>
+            <div hidden class="form-group">
+                <label asp-for="Exento" class="control-label"></label>
+                <input asp-for="Exento" class="form-control" />
+                <span asp-validation-for="Exento" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Email" class="control-label"></label>
+                <input asp-for="Email" class="form-control" />
+                <span asp-validation-for="Email" class="text-danger"></span>
+            </div>
+            <div hidden class="form-group">
+                <label asp-for="Saldo" class="control-label"></label>
+                <input asp-for="Saldo" value="0" class="form-control" />
+                <span asp-validation-for="Saldo" class="text-danger"></span>
+            </div>
+            <div  class="form-group">
+                <label asp-for="Descuento" class="control-label"></label>
+                <input asp-for="Descuento" value="0" class="form-control" />
+                <span asp-validation-for="Descuento" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Clasificacion" class="control-label"></label>
+                <input asp-for="Clasificacion" value=" " class="form-control" />
+                <span asp-validation-for="Clasificacion" class="text-danger"></span>
+            </div>
+            <div hidden class="form-group">
+                <label asp-for="Esprospecto" class="control-label"></label>
+                <input asp-for="Esprospecto" value="S" class="form-control" />
+                <span asp-validation-for="Esprospecto" class="text-danger"></span>
+            </div>
+            <div hidden class="form-group">
+                <label asp-for="Clocation" class="control-label"></label>
+                <input asp-for="Clocation" value=" " class="form-control" />
+                <span asp-validation-for="Clocation" class="text-danger"></span>
+            </div>
+            <div hidden class="form-group">
+                <label asp-for="Cvevend" class="control-label"></label>
+                <input asp-for="Cvevend" value=" " class="form-control" />
+                <span asp-validation-for="Cvevend" class="text-danger"></span>
+            </div>
+            <div hidden class="form-group">
+                <label asp-for="Transportep" class="control-label"></label>
+                <input asp-for="Transportep" value=" " class="form-control" />
+                <span asp-validation-for="Transportep" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="CreaCliente" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+

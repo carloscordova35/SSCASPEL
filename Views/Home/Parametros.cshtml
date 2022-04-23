@@ -1,0 +1,205 @@
+﻿@model SSCASPEL.Models.Parametros
+
+@{
+    ViewData["Title"] = "Parametros";
+    Layout = "~/Views/Home/Shared/_IndexLayout.cshtml";
+}
+
+<h1>Parametros</h1>
+
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="UpdParametros">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="Id" />
+
+            <div class="form-group">
+                <label asp-for="Empresa" class="control-label"></label>
+                <input asp-for="Empresa" class="form-control" />
+                <span asp-validation-for="Empresa" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Direccion" class="control-label"></label>
+                <input asp-for="Direccion" class="form-control" />
+                <span asp-validation-for="Direccion" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Rfc" class="control-label"></label>
+                <input asp-for="Rfc" class="form-control" />
+                <span asp-validation-for="Rfc" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Telefono" class="control-label"></label>
+                <input asp-for="Telefono" class="form-control" />
+                <span asp-validation-for="Telefono" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Email" class="control-label"></label>
+                <input asp-for="Email" class="form-control" />
+                <span asp-validation-for="Email" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Formato" class="control-label"></label>
+                <input asp-for="Formato" class="form-control" />
+                <span asp-validation-for="Formato" class="text-danger"></span>
+            </div>
+
+            <hr class="border-top my-3" />
+
+            <div class="form-group">
+                <label class="control-label">Mostrar existencias en dispositivos</label>
+                <select id="cars" asp-for="Mostrexist">
+                    <option value="0">NO</option>
+                    <option value="1">SI</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label class="control-label">Clientes por vendedor</label>
+
+                <select id="cars" asp-for="Cliexvend">
+                    <option value="0">NO</option>
+                    <option value="1">SI</option>
+                </select>
+
+            </div>
+            <div class="form-group">
+                <label class="control-label">Seleccionar esquema de impuestos</label>
+
+                <select id="cars" asp-for="Selesq">
+                    <option value="0">NO</option>
+                    <option value="1">SI</option>
+                </select>
+
+            </div>
+            <div class="form-group">
+                <label class="control-label">Pueden cambiar precios</label>
+
+                <select id="cars" asp-for="Cambiarprecio">
+                    <option value="0">NO</option>
+                    <option value="1">SI</option>
+                </select>
+
+            </div>
+            <hr class="border-top my-3" />
+
+            <div class="form-group">
+                <label class="control-label">Documento predeterminado</label>
+
+                <select id="cars" asp-for="Docpred">
+                    <option value="P">Pedido</option>
+                    <option value="C">Cotizacion</option>
+                    <option value="F">Factura</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label class="control-label">Integrado a ASPEL:</label>
+
+                <select id="aspel" asp-for="Integraaspel">
+                    <option value="0">NO</option>
+                    <option value="1">SI</option>
+                </select>
+            </div>
+
+
+            <div class="form-group">
+                <label class="control-label">Cobros integrado a:</label>
+
+                <select id="cars" asp-for="Cintegradoa">
+                    <option value="B">BANCOS</option>
+                    <option value="S">SAE</option>
+                    <option value="N">NINGUNO</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label class="control-label">Funcion en dispositivos:</label>
+
+                <select id="cars" asp-for="Tipouserfin">
+                    <option value="POS">POS</option>
+                    <option value="RUT">RUTERO</option>
+                    <option value="AMB">AMBOS</option>
+                </select>
+            </div>
+
+            <hr class="border-top my-3" />
+
+            <div class="form-group">
+                <label class="control-label">Integrado a FEL</label>
+
+                <select id="cars" asp-for="Intfel">
+                    <option value="0">NO</option>
+                    <option value="1">SI</option>
+                </select>
+            </div>
+
+            @if (Model.Intfel == 1)
+            {
+
+                <div class="form-group">
+                    <label class="control-label">Proveedor</label>
+
+                    <select id="cars" asp-for="Gface">
+                        <option value="COFIDI">COFIDI</option>
+                        <option value="INFILE">INFILE</option>
+                        <option value="MEGAPR">MEGAPRINT</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label class="control-label">Usuario</label>
+                    <input asp-for="Userfel" class="form-control" />
+                    <span asp-validation-for="Userfel" class="text-danger"></span>
+                </div>
+
+                <div class="form-group">
+                    <label class="control-label">Password</label>
+                    <input asp-for="Passfel" class="form-control" />
+                    <span asp-validation-for="Passfel" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label class="control-label">Clave PFX</label>
+                    <input asp-for="Pfxfel" class="form-control" />
+                    <span asp-validation-for="Pfxfel" class="text-danger"></span>
+                </div>
+
+            }
+
+
+            <div hidden class="form-group">
+                <label asp-for="Modo" class="control-label"></label>
+                <input asp-for="Modo" class="form-control" />
+                <span asp-validation-for="Modo" class="text-danger"></span>
+            </div>
+            <div hidden class="form-group">
+                <label asp-for="Fechaexp" class="control-label"></label>
+                <input asp-for="Fechaexp" class="form-control" />
+                <span asp-validation-for="Fechaexp" class="text-danger"></span>
+            </div>
+            <div hidden class="form-group">
+                <label asp-for="Dispositivos" class="control-label"></label>
+                <input asp-for="Dispositivos" class="form-control" />
+                <span asp-validation-for="Dispositivos" class="text-danger"></span>
+            </div>
+            <div hidden class="form-group">
+                <label asp-for="Serial" class="control-label"></label>
+                <input asp-for="Serial" class="form-control" />
+                <span asp-validation-for="Serial" class="text-danger"></span>
+            </div>
+            <br />
+            <div class="form-group">
+                <input type="submit" value="Guardar" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+<br />
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

@@ -1,0 +1,83 @@
+﻿@model SSCASPEL.Models.ClieCXC
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Estado de Cuenta - @Html.DisplayFor(model => model.cliente.Nombre)</title>
+</head>
+<body>
+    <p><img src="@Url.Content(Model.imagepath)" alt="" width="100" height="75" /></p>
+    <h2>@Html.DisplayFor(model => model.Param.Empresa)</h2>
+    <h3>RFC: @Html.DisplayFor(model => model.Param.Rfc)</h3>
+    <h3>Direccion: @Html.DisplayFor(model => model.Param.Direccion)</h3>
+    <h3>Telefono: @Html.DisplayFor(model => model.Param.Telefono)</h3>
+    <hr />
+    <h2>Estado de cuenta del cliente: </h2>
+    <table style="width: 497px; height: 90px;">
+        <tbody>
+            <tr style="height: 18px;">
+                <td style="width: 180px; height: 18px;">Codigo Cliente:</td>
+                <td style="width: 301px; height: 18px;">@Html.DisplayFor(model => model.cliente.Idsae)</td>
+            </tr>
+            <tr style="height: 18px;">
+                <td style="width: 180px; height: 18px;">Nombre:</td>
+                <td style="width: 301px; height: 18px;">@Html.DisplayFor(model => model.cliente.Nombre)</td>
+            </tr>
+            <tr style="height: 18px;">
+                <td style="width: 180px; height: 18px;">RFC:</td>
+                <td style="width: 350px; height: 18px;">@Html.DisplayFor(model => model.cliente.Rfc)</td>
+            </tr>
+            <tr style="height: 18px;">
+                <td style="width: 180px; height: 18px;">Fecha Corte:</td>
+                <td style="width: 301px; height: 18px;">@Html.DisplayFor(model => model.fechac)</td>
+            </tr>
+            <tr style="height: 18px;">
+                <td style="width: 180px; height: 18px;">Saldo:</td>
+                <td style="width: 350px; height: 18px;">@Html.DisplayFor(model => model.cliente.Saldo)</td>
+            </tr>
+        </tbody>
+    </table>
+    <p>&nbsp;</p>
+    <table style="height: 90px; border-collapse: collapse;" border="1">
+        <tbody>
+            <tr style="height: 18px;">
+                <th style="width: 100px; height: 18px;">Documento</th>
+                <th style="width: 100px; height: 18px;">Numero</th>
+                <th style="width: 100px; height: 18px;">No. Cuota</th>
+                <th style="width: 100px; height: 18px;">Fecha</th>
+                <th style="width: 100px; height: 18px;">Fecha Vencimiento</th>
+                <th style="width: 100px; height: 18px;">Saldo</th>
+                
+            </tr>
+        </tbody>
+        <tbody>
+            @foreach (var item in Model.detalle)
+            {
+            <tr style="height: 18px;">
+                <td style="width: 100px; height: 18px; text-align: center;">@Html.DisplayFor(modelItem => item.descr)</td>
+                <td style="width: 100px; height: 18px; text-align: justify;">@Html.DisplayFor(modelItem => item.refer)</td>
+                <td style="width: 100px; height: 18px; text-align: center;">@Html.DisplayFor(modelItem => item.num_cargo)</td>
+                <td style="width: 100px; height: 18px; text-align: center;">@Html.DisplayFor(modelItem => item.fecha_apli)</td>
+                <td style="width: 100px; height: 18px; text-align: center;">@Html.DisplayFor(modelItem => item.fecha_venc)</td>
+                <td style="width: 100px; height: 18px; text-align: right; ">@Html.DisplayFor(modelItem => item.saldo)</td>
+            </tr>
+            }
+        </tbody>
+        <tfoot>
+            <tr style="height: 18px;">
+                <td style="visibility: hidden; height: 18px; width: 100px;">&nbsp;</td>
+                <td style="visibility: hidden; height: 18px; width: 100px;">&nbsp;</td>
+                <td style="visibility: hidden; height: 18px; width: 100px;">&nbsp;</td>
+                <td style="visibility: hidden; height: 18px; width: 100px;">&nbsp;</td>
+                <td style="height: 18px; width: 100px; text-align: center;"><b>TOTAL</b></td>
+                <td style="height: 18px; width: 100px; text-align: right;"><b>@Html.DisplayFor(model => model.cliente.Saldo)</b></td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>

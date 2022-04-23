@@ -1,0 +1,82 @@
+﻿@model SSCASPEL.Models.Producto
+
+@{
+    ViewData["Title"] = "Editando el producto "+Model.Codigo;
+    Layout = "~/Views/Home/Shared/_IndexLayout.cshtml";
+}
+
+<h1>@Model.Descripcion</h1>
+
+<h4>Editando</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="EditarProducto">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="Codigo" />
+            <div class="form-group">
+                <label asp-for="Barcode" class="control-label"></label>
+                <input asp-for="Barcode" class="form-control" />
+                <span asp-validation-for="Barcode" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Descripcion" class="control-label"></label>
+                <input asp-for="Descripcion" class="form-control" />
+                <span asp-validation-for="Descripcion" class="text-danger"></span>
+            </div>
+            <div hidden class="form-group">
+                <label asp-for="Esquema" class="control-label"></label>
+                <input asp-for="Esquema" class="form-control" />
+                <span asp-validation-for="Esquema" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Precio" class="control-label"></label>
+                <input asp-for="Precio" class="form-control" />
+                <span asp-validation-for="Precio" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label class="control-label">Con Serie</label>
+                <select asp-for="Conserie">
+                    <option value="N">NO</option>
+                    <option value="S">SI</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label class="control-label">Tipo</label>
+                <select asp-for="Tipo">
+                    <option value="P">Producto</option>
+                    <option value="S">Servicio</option>
+                    <option value="K">Kit</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label asp-for="Existencia" class="control-label"></label>
+                <input asp-for="Existencia" class="form-control" />
+                <span asp-validation-for="Existencia" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Linea" class="control-label"></label>
+                <input asp-for="Linea" class="form-control" />
+                <span asp-validation-for="Linea" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Descrlinea" class="control-label"></label>
+                <input asp-for="Descrlinea" class="form-control" />
+                <span asp-validation-for="Descrlinea" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Sminimo" class="control-label"></label>
+                <input asp-for="Sminimo" class="form-control" />
+                <span asp-validation-for="Sminimo" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+

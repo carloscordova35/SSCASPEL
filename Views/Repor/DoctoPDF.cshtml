@@ -1,0 +1,106 @@
+﻿@model SSCASPEL.Models.DocumentoRev
+
+@{
+    ViewData["Title"] = "Documento";
+    Layout = null;
+    
+}
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <title>Documento @Html.DisplayFor(model => model.Encabezado.Id) </title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+<body>
+
+    <p><img src="@Url.Content(Model.imagepath)" alt="" width="100" height="75" /></p>
+    <h2>@Html.DisplayFor(model => model.Param.Empresa)</h2>
+    <h3>RFC: @Html.DisplayFor(model => model.Param.Rfc)</h3>
+    <h3>Direccion: @Html.DisplayFor(model => model.Param.Direccion)</h3>
+    <h3>Telefono: @Html.DisplayFor(model => model.Param.Telefono)</h3>
+    <hr />
+    <table style="width: 497px; height: 90px;">
+        <tbody>
+            <tr style="height: 18px;">
+                <td style="width: 180px; height: 18px;">Documento:</td>
+                <td style="width: 301px; height: 18px;">@Html.DisplayFor(model => model.Encabezado.Id)</td>
+            </tr>
+            <tr style="height: 18px;">
+                <td style="width: 180px; height: 18px;">Tipo:</td>
+                @if (Model.Encabezado.Tipo == "P")
+                {
+                    <td style="width: 301px; height: 18px;">Pedido</td>
+                }
+                else if (Model.Encabezado.Tipo == "C")
+                {
+                    <td style="width: 301px; height: 18px;">Cotizacion</td>
+                }
+                else
+                {
+                    <td style="width: 301px; height: 18px;">Factura</td>
+                }
+            </tr>
+            <tr style="height: 18px;">
+                <td style="width: 180px; height: 18px;">Referencia en Sistema:</td>
+                <td style="width: 301px; height: 18px;">@Html.DisplayFor(model => model.Encabezado.Cvedoc)</td>
+            </tr>
+            <tr style="height: 18px;">
+                <td style="width: 180px; height: 18px;">Cliente:</td>
+                <td style="width: 350px; height: 18px;">(@Html.DisplayFor(model => model.Encabezado.Cliente)) @Html.DisplayFor(model => model.Encabezado.Nombreclie)</td>
+            </tr>
+            <tr style="height: 18px;">
+                <td style="width: 180px; height: 18px;">NIT:</td>
+                <td style="width: 301px; height: 18px;">@Html.DisplayFor(model => model.Encabezado.Rfc)</td>
+            </tr>
+            <tr style="height: 18px;">
+                <td style="width: 180px; height: 18px;">Fecha:</td>
+                <td style="width: 301px; height: 18px;">@Html.DisplayFor(model => model.Encabezado.Fecha)</td>
+            </tr>
+        </tbody>
+    </table>
+    <p>&nbsp;</p>
+    <table style="height: 90px; border-collapse: collapse;" border="1">
+        <tbody>
+            <tr style="height: 18px;">
+                <th style="width: 70px; height: 18px;">Cantidad</th>
+                <th style="width: 61px; height: 18px;">Codigo</th>
+                <th style="width: 92px; height: 18px;">Descripcion</th>
+                <th style="width: 50px; height: 18px;">Imagen</th>
+                <th style="width: 67px; height: 18px;">Precio</th>
+                <th style="width: 67px; height: 18px;">Subtotal</th>
+                <th style="width: 147px; height: 18px;">Observacion</th>
+            </tr>
+        </tbody>
+        <tbody>
+            @foreach (var item in Model.Detalle2)
+            {
+                <tr style="height: 18px;">
+                    <td style="width: 80px; height: 18px; text-align: center;">@Html.DisplayFor(modelItem => item.Cantidad)</td>
+                    <td style="width: 80px; height: 18px; text-align: center;">@Html.DisplayFor(modelItem => item.Cveart)</td>
+                    <td style="width: 300px; height: 18px;">@Html.DisplayFor(modelItem => item.Descr)</td>
+                    <td style="width: 50px; height: 18px; text-align: right;"><img src="@item.Imagename" width="80" height="80" /></td>
+                    <td style="width: 70px; height: 18px; text-align: right;">@Html.DisplayFor(modelItem => item.Preciou)</td>
+                    <td style="width: 70px; height: 18px; text-align: right;">@Html.DisplayFor(modelItem => item.Totalpartida)</td>
+                    <td style="width: 200px; height: 18px;text-align: justify;">@Html.DisplayFor(modelItem => item.Observacion)</td>
+                </tr>
+            }
+        </tbody>
+        <tfoot>
+            <tr style="height: 18px;">
+                <td style="visibility: hidden; height: 18px; width: 70px;">&nbsp;</td>
+                <td style="visibility: hidden; height: 18px; width: 61px;">&nbsp;</td>
+                <td style="visibility: hidden; height: 18px; width: 92px;">&nbsp;</td>
+                <td style="visibility: hidden; height: 18px; width: 92px;">&nbsp;</td>
+                <td style="height: 18px; width: 50px; text-align: center;">TOTAL</td>
+                <td style="height: 18px; width: 67px; text-align: right;">@Html.DisplayFor(model => model.Encabezado.Total)</td>
+            </tr>
+        </tfoot>
+    </table>
+    <p>Observaciones:</p>
+    <p style="text-align: justify;">@Html.DisplayFor(model => model.Encabezado.Observacion)</p>
+</body>
+</html>

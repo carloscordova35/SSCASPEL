@@ -1,0 +1,70 @@
+﻿
+@{
+    ViewData["Title"] = "Info";
+    Layout = "~/Views/Home/Shared/_IndexLayout.cshtml";
+}
+
+<h1>Info</h1>
+
+<div>
+    @{ 
+        //  var parametros = ViewData["parametros"];
+        Parametros pa =(Parametros) ViewData["parametros"];
+        string fechaes = "";
+        string modo = "";
+        string cliexv = "NO";
+        if (pa.Modo.Equals("R"))
+        {
+
+            fechaes = "Fecha de expiracion";
+            modo = "RENTA";
+
+        }
+        else {
+            fechaes = "Fecha de registro";
+            modo = "COMPLETO";
+        }
+
+        if (pa.Cliexvend == 1) {
+            cliexv = "SI";
+        }
+    }
+   
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-3">
+            Clientes por vendedor
+        </dt>
+        <dd class = "col-sm-10">
+            @cliexv
+        </dd>
+        <dt class = "col-sm-3">
+            Modalidad
+        </dt>
+        <dd class = "col-sm-10">
+            @modo
+        </dd>
+        <dt class = "col-sm-3">
+            @fechaes
+        </dt>
+        <dd class = "col-sm-10">
+           @pa.Fechaexp
+        </dd>
+        <dt class = "col-sm-3">
+            Dipositivos registrados
+        </dt>
+        <dd class = "col-sm-10">
+            @pa.Dispositivos
+        </dd>
+        <dt class = "col-sm-3">
+           Serial
+        </dt>
+        <dd class = "col-sm-10">
+           @pa.Serial
+        </dd>
+    </dl>
+</div>
+<div>
+    @Html.ActionLink("Edit", "Edit", new { /* id = Model.PrimaryKey */ }) |
+    <a asp-action="Index">Back to List</a>
+</div>

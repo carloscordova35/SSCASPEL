@@ -1,0 +1,68 @@
+﻿@model IEnumerable<SSCASPEL.Models.Usuario>
+
+@{
+    ViewData["Title"] = "Usuarios";
+    Layout = "~/Views/Home/Shared/_IndexLayout.cshtml";
+}
+
+<h1>Usuarios</h1>
+
+<p>
+    <a asp-action="NuevoUsuario">Crear nuevo</a>
+</p>
+<div class="table-responsive">
+    <table class="table">
+        <thead>
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.Username)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Nombre)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Email)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Rol)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Cvevend)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Habilitado)
+                </th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Username)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Nombre)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Email)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Rol)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Cvevend)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Habilitado)
+                    </td>
+                    <td>                      
+                        <a asp-action="Usuario" asp-route-id="@item.Id">Detalle</a> |
+                        <a asp-action="Delete" asp-route-id="@item.Id">Eliminar</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+    </div>

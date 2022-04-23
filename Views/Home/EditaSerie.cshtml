@@ -1,0 +1,62 @@
+﻿@model SSCASPEL.Models.Series
+
+@{
+    ViewData["Title"] = "EditaSerie";
+    Layout = "~/Views/Home/Shared/_IndexLayout.cshtml";
+}
+
+<h1>EditaSerie</h1>
+
+<h4>Series</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="EditarSerieN">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="Id" />
+            <div class="form-group">
+                <label asp-for="Serie" class="control-label"></label>
+                <input asp-for="Serie" class="form-control" />
+                <span asp-validation-for="Serie" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Tipodoc" class="control-label"></label>
+                <input asp-for="Tipodoc" class="form-control" />
+                <span asp-validation-for="Tipodoc" class="text-danger"></span>
+            </div>
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="Concai" /> @Html.DisplayNameFor(model => model.Concai)
+                </label>
+            </div>
+            <div class="form-group">
+                <label asp-for="Cai" class="control-label"></label>
+                <input asp-for="Cai" class="form-control" />
+                <span asp-validation-for="Cai" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Fechalim" class="control-label"></label>
+                <input asp-for="Fechalim" class="form-control" />
+                <span asp-validation-for="Fechalim" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Folioi" class="control-label"></label>
+                <input asp-for="Folioi" class="form-control" />
+                <span asp-validation-for="Folioi" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Foliof" class="control-label"></label>
+                <input asp-for="Foliof" class="form-control" />
+                <span asp-validation-for="Foliof" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+

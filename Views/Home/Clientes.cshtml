@@ -1,0 +1,101 @@
+﻿@model IEnumerable<SSCASPEL.Models.Cliente>
+
+@{
+    ViewData["Title"] = "Clientes";
+    Layout = "~/Views/Home/Shared/_IndexLayout.cshtml";
+}
+
+<h1>Clientes</h1>
+
+<p>
+    <a asp-action="CreateClie">Create New</a>
+</p>
+
+@using (Html.BeginForm())
+{
+<p>
+    Buscar por codigo desde: @Html.TextBox("fecha", "", new { @type = "text", @class = "classname", autocomplete = "off" })
+
+    hasta @Html.TextBox("fecha2", "", new { @type = "text", @class = "classname", autocomplete = "off" })
+     o nombre @Html.TextBox("nombre", "", new { @type = "text", @class = "classname", autocomplete = "off" })
+    <input type="submit" value="Filtrar" />
+</p>
+}
+<div class="table-responsive">
+    <div class="col-12">
+        <table class="table table-sm table-striped table-hover border-bottom">
+            <thead>
+                <tr>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Id)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Idsae)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Estado)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Nombre)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Rfc)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Telefono)
+                    </th>
+
+                    <th>
+                        @Html.DisplayNameFor(model => model.Saldo)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Descuento)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Clasificacion)
+                    </th>
+
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>
+                            <a asp-action="Cliente" asp-route-id="@item.Id">@Html.DisplayFor(modelItem => item.Id)</a>
+                        </td>
+                        <td align="center">
+                            @Html.DisplayFor(modelItem => item.Idsae)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Estado)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Nombre)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Rfc)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Telefono)
+                        </td>
+
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Saldo)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Descuento)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Clasificacion)
+                        </td>
+                        <td>
+                            <a asp-action="Cliente" asp-route-id="@item.Id">Detalle</a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>

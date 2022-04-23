@@ -1,0 +1,35 @@
+﻿@model IEnumerable<SSCASPEL.Models.Dispositivo>
+
+@{
+    ViewData["Title"] = "Dispositivos";
+    Layout = "~/Views/Home/Shared/_IndexLayout.cshtml";
+}
+
+<h1>Dispositivos</h1>
+
+<p>
+    
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Device)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Device)
+            </td>
+            <td>
+                
+                <a asp-action="DelDevice" asp-route-id="@item.ID">Eliminar</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

@@ -1,0 +1,112 @@
+﻿@model SSCASPEL.Models.Usuario
+
+@{
+    ViewData["Title"] = "Usuario";
+    Layout = "~/Views/Home/Shared/_IndexLayout.cshtml";
+}
+
+<h1>Usuario</h1>
+
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="UpUsuario">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="Id" />
+            <div class="form-group">
+                <label asp-for="Username" class="control-label"></label>
+                <input asp-for="Username" class="form-control" />
+                <span asp-validation-for="Username" class="text-danger"></span>
+            </div>
+            <button type="button" data-toggle="collapse" data-target="#demo">Cambiar contraseña</button>
+
+            <div class="collapse form-group" id="demo">
+                <label asp-for="Password" class="control-label"></label>
+                <input asp-for="Password" class="form-control" />
+                <span asp-validation-for="Password" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Nombre" class="control-label"></label>
+                <input asp-for="Nombre" class="form-control" />
+                <span asp-validation-for="Nombre" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Email" class="control-label"></label>
+                <input asp-for="Email" class="form-control" />
+                <span asp-validation-for="Email" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Tipo" class="control-label"></label>
+                <select asp-for="Tipo">
+                    <option value="RUT">RUTERO</option>
+                    <option value="POS">POS</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label class="control-label">Documento predeterminado</label>
+                <select asp-for="Docpred">
+                    <option value="P">Pedido</option>
+                    <option value="C">Cotizacion</option>
+                    <option value="F">Factura</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label asp-for="Seriepred" class="control-label"></label>
+                <input asp-for="Seriepred" class="form-control" />
+                <span asp-validation-for="Seriepred" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Rol" class="control-label"></label>
+                <select asp-for="Rol">
+                    <option value="1">Administrador</option>
+                    <option value="2">Vendedor</option>
+                    <option value="3">Supervisor</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label class="control-label">Vendedor</label>
+                <select asp-for="Cvevend">
+                    @{
+
+                        var vende = ViewData["vendedor"] as IEnumerable<Vendedor>;
+
+                        foreach (Vendedor ved in vende)
+                        {
+
+                            <option value="@ved.cve_vend">@ved.nombre</option>
+                        }
+
+                    }
+                    <option value="0">Ninguno</option>
+                    <!-- <input asp-for="Cvevend" class="form-control" />
+            <span asp-validation-for="Cvevend" class="text-danger"></span>-->
+                </select>
+            </div>
+            <div class="form-group">
+                <label class="control-label">Almacen</label>
+                <input asp-for="Noalmacen" class="form-control" />
+                <span asp-validation-for="Noalmacen" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Habilitado" class="control-label"></label>
+                <select asp-for="Habilitado">
+                    <option value="1">SI</option>
+                    <option value="0">NO</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Guardar" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
