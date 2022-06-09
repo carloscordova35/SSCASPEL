@@ -2257,3 +2257,233 @@ Json Recibido: {"Id":0,"Idws":0,"Cvedoc":null,"Tipdoc":"P","Serie":"STAND.","Cli
 
 Documento creado: 23
 
+30/04/2022 12:47:01
+ID del usuario: 1
+UI del documento: ebef29ec-b7e0-3f0b-b929-faeffe4a93f5
+Desde : Fragment3
+FechaDoc : 2022-04-30 12:43:14.020
+Json Recibido: {"Id":0,"Idws":0,"Cvedoc":null,"Tipdoc":"F","Serie":"FN","Cliente":"     MOSTR","Idclie":2,"Fecha":"2022-04-30 12:43:14.020","Fechaen":null,"Vendedor":"     ","Esquema":0,"Supedido":"jj","Condicion":null,"Canttot":88.39281,"Impuesto1":0,"Impuesto2":0,"Impuesto3":0,"Impuesto4":10.607137199999999,"Descuento":0,"Total":98.99994720000001,"Rfc":"Cf","Ensistema":null,"Fechasub":null,"Observacion":"printer","Nombreclie":"Cliente desde ssc movil","Dirclie":null,"Clocation":"","Transporte":"hjj","Direntrega":"vbb","Iduser":1,"Noalmacen":0,"Uidev":"ebef29ec-b7e0-3f0b-b929-faeffe4a93f5","Enviadesde":"Fragment3","Detalles":[{"Id":0,"Pedido":0,"NoPartida":0,"Cantidad":33,"Cantxuv":1,"Cveart":"JNRJT-001","Descr":"JUGO NARANJA TAMPICO 480ML","Precio":2.67857,"Apartado":0,"Serie":"","Esquema":1,"Linea":0,"Politica":0,"Impuesto1":0,"Impuesto2":0,"Impuesto3":0,"Impuesto4":12,"Desc1":0,"Desc2":0,"Tipcam":1,"Univen":1,"Tipprod":"P","Lote":null,"Preciou":2.9999984000000004,"Totalpartida":98.99994720000001,"Observacion":""}]}
+
+30/04/2022 12:47:02
+Error al subir un pedido: An error occurred while updating the entries. See the inner exception for details.
+
+30/04/2022 12:47:03
+ID del usuario: 1
+UI del documento: ebef29ec-b7e0-3f0b-b929-faeffe4a93f5
+Desde : Fragment3
+FechaDoc : 2022-04-30 12:43:14.020
+Json Recibido: {"Id":0,"Idws":0,"Cvedoc":null,"Tipdoc":"F","Serie":"FN","Cliente":"     MOSTR","Idclie":2,"Fecha":"2022-04-30 12:43:14.020","Fechaen":null,"Vendedor":"     ","Esquema":0,"Supedido":"jj","Condicion":null,"Canttot":88.39281,"Impuesto1":0,"Impuesto2":0,"Impuesto3":0,"Impuesto4":10.607137199999999,"Descuento":0,"Total":98.99994720000001,"Rfc":"Cf","Ensistema":null,"Fechasub":null,"Observacion":"printer","Nombreclie":"Cliente desde ssc movil","Dirclie":null,"Clocation":"","Transporte":"hjj","Direntrega":"vbb","Iduser":1,"Noalmacen":0,"Uidev":"ebef29ec-b7e0-3f0b-b929-faeffe4a93f5","Enviadesde":"Fragment3","Detalles":[{"Id":0,"Pedido":0,"NoPartida":0,"Cantidad":33,"Cantxuv":1,"Cveart":"JNRJT-001","Descr":"JUGO NARANJA TAMPICO 480ML","Precio":2.67857,"Apartado":0,"Serie":"","Esquema":1,"Linea":0,"Politica":0,"Impuesto1":0,"Impuesto2":0,"Impuesto3":0,"Impuesto4":12,"Desc1":0,"Desc2":0,"Tipcam":1,"Univen":1,"Tipprod":"P","Lote":null,"Preciou":2.9999984000000004,"Totalpartida":98.99994720000001,"Observacion":""}]}
+
+Documento encontrado y devuelto: 24
+
+1/05/2022 12:19:32
+ID del usuario: 1
+UI del documento: 66db858a-b4f0-3cd2-8d28-c16521035ecf
+Desde : Fragment3
+FechaDoc : 2022-05-01 12:19:23.500
+Json Recibido: {"Id":0,"Idws":0,"Cvedoc":null,"Tipdoc":"F","Serie":"FN","Cliente":"         1","Idclie":1,"Fecha":"2022-05-01 12:19:23.500","Fechaen":null,"Vendedor":"     ","Esquema":0,"Supedido":"kfkjff","Condicion":null,"Canttot":88.39281,"Impuesto1":0,"Impuesto2":0,"Impuesto3":0,"Impuesto4":10.607137199999999,"Descuento":0,"Total":98.99994720000001,"Rfc":"37255436","Ensistema":null,"Fechasub":null,"Observacion":"yyy","Nombreclie":"CARLOS ANDRES CORDOVA","Dirclie":null,"Clocation":"","Transporte":"h uhhhh j","Direntrega":"hh","Iduser":1,"Noalmacen":0,"Uidev":"66db858a-b4f0-3cd2-8d28-c16521035ecf","Enviadesde":"Fragment3","Detalles":[{"Id":0,"Pedido":0,"NoPartida":0,"Cantidad":33,"Cantxuv":1,"Cveart":"JNRJT-001","Descr":"JUGO NARANJA TAMPICO 480ML","Precio":2.67857,"Apartado":0,"Serie":"","Esquema":1,"Linea":0,"Politica":0,"Impuesto1":0,"Impuesto2":0,"Impuesto3":0,"Impuesto4":12,"Desc1":0,"Desc2":0,"Tipcam":1,"Univen":1,"Tipprod":"P","Lote":null,"Preciou":2.9999984000000004,"Totalpartida":98.99994720000001,"Observacion":""}]}
+
+1/05/2022 12:19:33
+Error al subir un pedido: An error occurred while updating the entries. See the inner exception for details.
+
+1/05/2022 12:19:35
+ID del usuario: 1
+UI del documento: 66db858a-b4f0-3cd2-8d28-c16521035ecf
+Desde : Fragment3
+FechaDoc : 2022-05-01 12:19:23.500
+Json Recibido: {"Id":0,"Idws":0,"Cvedoc":null,"Tipdoc":"F","Serie":"FN","Cliente":"         1","Idclie":1,"Fecha":"2022-05-01 12:19:23.500","Fechaen":null,"Vendedor":"     ","Esquema":0,"Supedido":"kfkjff","Condicion":null,"Canttot":88.39281,"Impuesto1":0,"Impuesto2":0,"Impuesto3":0,"Impuesto4":10.607137199999999,"Descuento":0,"Total":98.99994720000001,"Rfc":"37255436","Ensistema":null,"Fechasub":null,"Observacion":"yyy","Nombreclie":"CARLOS ANDRES CORDOVA","Dirclie":null,"Clocation":"","Transporte":"h uhhhh j","Direntrega":"hh","Iduser":1,"Noalmacen":0,"Uidev":"66db858a-b4f0-3cd2-8d28-c16521035ecf","Enviadesde":"Fragment3","Detalles":[{"Id":0,"Pedido":0,"NoPartida":0,"Cantidad":33,"Cantxuv":1,"Cveart":"JNRJT-001","Descr":"JUGO NARANJA TAMPICO 480ML","Precio":2.67857,"Apartado":0,"Serie":"","Esquema":1,"Linea":0,"Politica":0,"Impuesto1":0,"Impuesto2":0,"Impuesto3":0,"Impuesto4":12,"Desc1":0,"Desc2":0,"Tipcam":1,"Univen":1,"Tipprod":"P","Lote":null,"Preciou":2.9999984000000004,"Totalpartida":98.99994720000001,"Observacion":""}]}
+
+Documento encontrado y devuelto: 25
+
+1/05/2022 14:12:03
+ID del usuario: 1
+UI del documento: 2c3c5f45-3aa0-3ec2-9f00-a57a276fccaf
+Desde : Fragment3
+FechaDoc : 2022-05-01 14:11:21.199
+Json Recibido: {"Id":0,"Idws":0,"Cvedoc":null,"Tipdoc":"F","Serie":"FN","Cliente":"         1","Idclie":1,"Fecha":"2022-05-01 14:11:21.199","Fechaen":null,"Vendedor":"     ","Esquema":0,"Supedido":"jjf","Condicion":null,"Canttot":24.10713,"Impuesto1":0,"Impuesto2":0,"Impuesto3":0,"Impuesto4":2.8928556,"Descuento":0,"Total":26.999985600000002,"Rfc":"37255436","Ensistema":null,"Fechasub":null,"Observacion":"jjfjjf","Nombreclie":"CARLOS ANDRES CORDOVA","Dirclie":null,"Clocation":"","Transporte":"","Direntrega":"","Iduser":1,"Noalmacen":0,"Uidev":"2c3c5f45-3aa0-3ec2-9f00-a57a276fccaf","Enviadesde":"Fragment3","Detalles":[{"Id":0,"Pedido":0,"NoPartida":0,"Cantidad":9,"Cantxuv":1,"Cveart":"JNRJT-001","Descr":"JUGO NARANJA TAMPICO 480ML","Precio":2.67857,"Apartado":0,"Serie":"","Esquema":1,"Linea":0,"Politica":0,"Impuesto1":0,"Impuesto2":0,"Impuesto3":0,"Impuesto4":12,"Desc1":0,"Desc2":0,"Tipcam":1,"Univen":1,"Tipprod":"P","Lote":null,"Preciou":2.9999984000000004,"Totalpartida":26.999985600000002,"Observacion":""}]}
+
+1/05/2022 14:12:04
+Error al subir un pedido: An error occurred while updating the entries. See the inner exception for details.
+
+1/05/2022 14:12:05
+ID del usuario: 1
+UI del documento: 2c3c5f45-3aa0-3ec2-9f00-a57a276fccaf
+Desde : Fragment3
+FechaDoc : 2022-05-01 14:11:21.199
+Json Recibido: {"Id":0,"Idws":0,"Cvedoc":null,"Tipdoc":"F","Serie":"FN","Cliente":"         1","Idclie":1,"Fecha":"2022-05-01 14:11:21.199","Fechaen":null,"Vendedor":"     ","Esquema":0,"Supedido":"jjf","Condicion":null,"Canttot":24.10713,"Impuesto1":0,"Impuesto2":0,"Impuesto3":0,"Impuesto4":2.8928556,"Descuento":0,"Total":26.999985600000002,"Rfc":"37255436","Ensistema":null,"Fechasub":null,"Observacion":"jjfjjf","Nombreclie":"CARLOS ANDRES CORDOVA","Dirclie":null,"Clocation":"","Transporte":"","Direntrega":"","Iduser":1,"Noalmacen":0,"Uidev":"2c3c5f45-3aa0-3ec2-9f00-a57a276fccaf","Enviadesde":"Fragment3","Detalles":[{"Id":0,"Pedido":0,"NoPartida":0,"Cantidad":9,"Cantxuv":1,"Cveart":"JNRJT-001","Descr":"JUGO NARANJA TAMPICO 480ML","Precio":2.67857,"Apartado":0,"Serie":"","Esquema":1,"Linea":0,"Politica":0,"Impuesto1":0,"Impuesto2":0,"Impuesto3":0,"Impuesto4":12,"Desc1":0,"Desc2":0,"Tipcam":1,"Univen":1,"Tipprod":"P","Lote":null,"Preciou":2.9999984000000004,"Totalpartida":26.999985600000002,"Observacion":""}]}
+
+Documento encontrado y devuelto: 26
+
+1/05/2022 14:13:15
+ID del usuario: 1
+UI del documento: 9672a695-fb49-368b-ab74-7a3136b2014b
+Desde : Fragment3
+FechaDoc : 2022-05-01 14:12:56.491
+Json Recibido: {"Id":0,"Idws":0,"Cvedoc":null,"Tipdoc":"F","Serie":"FN","Cliente":"         1","Idclie":1,"Fecha":"2022-05-01 14:12:56.491","Fechaen":null,"Vendedor":"     ","Esquema":0,"Supedido":null,"Condicion":null,"Canttot":350,"Impuesto1":0,"Impuesto2":0,"Impuesto3":0,"Impuesto4":42,"Descuento":0,"Total":392.00000000000006,"Rfc":"37255436","Ensistema":null,"Fechasub":null,"Observacion":"con impresi\u00F3n ","Nombreclie":"CARLOS ANDRES CORDOVA","Dirclie":null,"Clocation":"","Transporte":"","Direntrega":"","Iduser":1,"Noalmacen":0,"Uidev":"9672a695-fb49-368b-ab74-7a3136b2014b","Enviadesde":"Fragment3","Detalles":[{"Id":0,"Pedido":0,"NoPartida":0,"Cantidad":8,"Cantxuv":1,"Cveart":"S001","Descr":"SERVICIO DE FLETE","Precio":43.75,"Apartado":0,"Serie":"","Esquema":1,"Linea":0,"Politica":0,"Impuesto1":0,"Impuesto2":0,"Impuesto3":0,"Impuesto4":12,"Desc1":0,"Desc2":0,"Tipcam":1,"Univen":1,"Tipprod":"S","Lote":null,"Preciou":49.00000000000001,"Totalpartida":392.00000000000006,"Observacion":""}]}
+
+1/05/2022 14:13:15
+Error al subir un pedido: An error occurred while updating the entries. See the inner exception for details.
+
+1/05/2022 14:13:16
+ID del usuario: 1
+UI del documento: 9672a695-fb49-368b-ab74-7a3136b2014b
+Desde : Fragment3
+FechaDoc : 2022-05-01 14:12:56.491
+Json Recibido: {"Id":0,"Idws":0,"Cvedoc":null,"Tipdoc":"F","Serie":"FN","Cliente":"         1","Idclie":1,"Fecha":"2022-05-01 14:12:56.491","Fechaen":null,"Vendedor":"     ","Esquema":0,"Supedido":null,"Condicion":null,"Canttot":350,"Impuesto1":0,"Impuesto2":0,"Impuesto3":0,"Impuesto4":42,"Descuento":0,"Total":392.00000000000006,"Rfc":"37255436","Ensistema":null,"Fechasub":null,"Observacion":"con impresi\u00F3n ","Nombreclie":"CARLOS ANDRES CORDOVA","Dirclie":null,"Clocation":"","Transporte":"","Direntrega":"","Iduser":1,"Noalmacen":0,"Uidev":"9672a695-fb49-368b-ab74-7a3136b2014b","Enviadesde":"Fragment3","Detalles":[{"Id":0,"Pedido":0,"NoPartida":0,"Cantidad":8,"Cantxuv":1,"Cveart":"S001","Descr":"SERVICIO DE FLETE","Precio":43.75,"Apartado":0,"Serie":"","Esquema":1,"Linea":0,"Politica":0,"Impuesto1":0,"Impuesto2":0,"Impuesto3":0,"Impuesto4":12,"Desc1":0,"Desc2":0,"Tipcam":1,"Univen":1,"Tipprod":"S","Lote":null,"Preciou":49.00000000000001,"Totalpartida":392.00000000000006,"Observacion":""}]}
+
+Documento encontrado y devuelto: 27
+
+19/05/2022 09:22:49
+ID del usuario: 1
+UI del documento: aeb36354-aafe-3ada-815a-aecb7e1cfc8c
+Desde : Fragment3
+FechaDoc : 2022-05-19 09:22:38.634
+Json Recibido: {"Id":0,"Idws":0,"Cvedoc":null,"Tipdoc":"F","Serie":"FN","Cliente":"         1","Idclie":1,"Fecha":"2022-05-19 09:22:38.634","Fechaen":null,"Vendedor":"     ","Esquema":0,"Supedido":"8855","Condicion":null,"Canttot":2255.3562899999997,"Impuesto1":0,"Impuesto2":0,"Impuesto3":0,"Impuesto4":270.64275480000003,"Descuento":0,"Total":2525.9990448000003,"Rfc":"37255436","Ensistema":null,"Fechasub":null,"Observacion":"tiene una observaci\u00F3n\npara subir el json","Nombreclie":"CARLOS ANDRES CORDOVA","Dirclie":null,"Clocation":"","Transporte":"","Direntrega":"","Iduser":1,"Noalmacen":0,"Uidev":"aeb36354-aafe-3ada-815a-aecb7e1cfc8c","Enviadesde":"Fragment3","Detalles":[{"Id":0,"Pedido":0,"NoPartida":0,"Cantidad":9,"Cantxuv":1,"Cveart":"JNRJT-001","Descr":"JUGO NARANJA TAMPICO 480ML","Precio":2.67857,"Apartado":0,"Serie":"","Esquema":1,"Linea":0,"Politica":0,"Impuesto1":0,"Impuesto2":0,"Impuesto3":0,"Impuesto4":12,"Desc1":0,"Desc2":0,"Tipcam":1,"Univen":1,"Tipprod":"P","Lote":null,"Preciou":2.9999984000000004,"Totalpartida":26.999985600000002,"Observacion":""},{"Id":0,"Pedido":0,"NoPartida":0,"Cantidad":98,"Cantxuv":1,"Cveart":"VIT01","Descr":"VITAMINA E 400U","Precio":22.32142,"Apartado":0,"Serie":"","Esquema":1,"Linea":0,"Politica":0,"Impuesto1":0,"Impuesto2":0,"Impuesto3":0,"Impuesto4":12,"Desc1":0,"Desc2":0,"Tipcam":1,"Univen":1,"Tipprod":"P","Lote":null,"Preciou":24.9999904,"Totalpartida":2449.9990592000004,"Observacion":""},{"Id":0,"Pedido":0,"NoPartida":0,"Cantidad":1,"Cantxuv":1,"Cveart":"S001","Descr":"SERVICIO DE FLETE","Precio":43.75,"Apartado":0,"Serie":"","Esquema":1,"Linea":0,"Politica":0,"Impuesto1":0,"Impuesto2":0,"Impuesto3":0,"Impuesto4":12,"Desc1":0,"Desc2":0,"Tipcam":1,"Univen":1,"Tipprod":"S","Lote":null,"Preciou":49.00000000000001,"Totalpartida":49.00000000000001,"Observacion":""}]}
+
+19/05/2022 09:22:49
+Error al subir un pedido: An error occurred while updating the entries. See the inner exception for details.
+
+19/05/2022 09:22:50
+ID del usuario: 1
+UI del documento: aeb36354-aafe-3ada-815a-aecb7e1cfc8c
+Desde : Fragment3
+FechaDoc : 2022-05-19 09:22:38.634
+Json Recibido: {"Id":0,"Idws":0,"Cvedoc":null,"Tipdoc":"F","Serie":"FN","Cliente":"         1","Idclie":1,"Fecha":"2022-05-19 09:22:38.634","Fechaen":null,"Vendedor":"     ","Esquema":0,"Supedido":"8855","Condicion":null,"Canttot":2255.3562899999997,"Impuesto1":0,"Impuesto2":0,"Impuesto3":0,"Impuesto4":270.64275480000003,"Descuento":0,"Total":2525.9990448000003,"Rfc":"37255436","Ensistema":null,"Fechasub":null,"Observacion":"tiene una observaci\u00F3n\npara subir el json","Nombreclie":"CARLOS ANDRES CORDOVA","Dirclie":null,"Clocation":"","Transporte":"","Direntrega":"","Iduser":1,"Noalmacen":0,"Uidev":"aeb36354-aafe-3ada-815a-aecb7e1cfc8c","Enviadesde":"Fragment3","Detalles":[{"Id":0,"Pedido":0,"NoPartida":0,"Cantidad":9,"Cantxuv":1,"Cveart":"JNRJT-001","Descr":"JUGO NARANJA TAMPICO 480ML","Precio":2.67857,"Apartado":0,"Serie":"","Esquema":1,"Linea":0,"Politica":0,"Impuesto1":0,"Impuesto2":0,"Impuesto3":0,"Impuesto4":12,"Desc1":0,"Desc2":0,"Tipcam":1,"Univen":1,"Tipprod":"P","Lote":null,"Preciou":2.9999984000000004,"Totalpartida":26.999985600000002,"Observacion":""},{"Id":0,"Pedido":0,"NoPartida":0,"Cantidad":98,"Cantxuv":1,"Cveart":"VIT01","Descr":"VITAMINA E 400U","Precio":22.32142,"Apartado":0,"Serie":"","Esquema":1,"Linea":0,"Politica":0,"Impuesto1":0,"Impuesto2":0,"Impuesto3":0,"Impuesto4":12,"Desc1":0,"Desc2":0,"Tipcam":1,"Univen":1,"Tipprod":"P","Lote":null,"Preciou":24.9999904,"Totalpartida":2449.9990592000004,"Observacion":""},{"Id":0,"Pedido":0,"NoPartida":0,"Cantidad":1,"Cantxuv":1,"Cveart":"S001","Descr":"SERVICIO DE FLETE","Precio":43.75,"Apartado":0,"Serie":"","Esquema":1,"Linea":0,"Politica":0,"Impuesto1":0,"Impuesto2":0,"Impuesto3":0,"Impuesto4":12,"Desc1":0,"Desc2":0,"Tipcam":1,"Univen":1,"Tipprod":"S","Lote":null,"Preciou":49.00000000000001,"Totalpartida":49.00000000000001,"Observacion":""}]}
+
+Documento encontrado y devuelto: 28
+
+19/05/2022 09:28:14
+ID del usuario: 1
+UI del documento: aeb36354-aafe-3ada-815a-aecb7e1cfc8d
+Desde : Fragment3
+FechaDoc : 2022-05-19 09:22:38.634
+Json Recibido: {"Id":0,"Idws":0,"Cvedoc":null,"Tipdoc":"F","Serie":"FN","Cliente":"         1","Idclie":1,"Fecha":"2022-05-19 09:22:38.634","Fechaen":null,"Vendedor":"     ","Esquema":0,"Supedido":"8855","Condicion":null,"Canttot":2255.3562899999997,"Impuesto1":0,"Impuesto2":0,"Impuesto3":0,"Impuesto4":270.64275480000003,"Descuento":0,"Total":2525.9990448000003,"Rfc":"37255436","Ensistema":null,"Fechasub":null,"Observacion":"tiene una observaci\u00F3n\npara subir el json","Nombreclie":"CARLOS ANDRES CORDOVA","Dirclie":null,"Clocation":"","Transporte":"","Direntrega":"","Iduser":1,"Noalmacen":0,"Uidev":"aeb36354-aafe-3ada-815a-aecb7e1cfc8d","Enviadesde":"Fragment3","Detalles":[{"Id":0,"Pedido":0,"NoPartida":0,"Cantidad":9,"Cantxuv":1,"Cveart":"JNRJT-001","Descr":"JUGO NARANJA TAMPICO 480ML","Precio":2.67857,"Apartado":0,"Serie":"","Esquema":1,"Linea":0,"Politica":0,"Impuesto1":0,"Impuesto2":0,"Impuesto3":0,"Impuesto4":12,"Desc1":0,"Desc2":0,"Tipcam":1,"Univen":1,"Tipprod":"P","Lote":null,"Preciou":2.9999984000000004,"Totalpartida":26.999985600000002,"Observacion":""},{"Id":0,"Pedido":0,"NoPartida":0,"Cantidad":98,"Cantxuv":1,"Cveart":"VIT01","Descr":"VITAMINA E 400U","Precio":22.32142,"Apartado":0,"Serie":"","Esquema":1,"Linea":0,"Politica":0,"Impuesto1":0,"Impuesto2":0,"Impuesto3":0,"Impuesto4":12,"Desc1":0,"Desc2":0,"Tipcam":1,"Univen":1,"Tipprod":"P","Lote":null,"Preciou":24.9999904,"Totalpartida":2449.9990592000004,"Observacion":""},{"Id":0,"Pedido":0,"NoPartida":0,"Cantidad":1,"Cantxuv":1,"Cveart":"S001","Descr":"SERVICIO DE FLETE","Precio":43.75,"Apartado":0,"Serie":"","Esquema":1,"Linea":0,"Politica":0,"Impuesto1":0,"Impuesto2":0,"Impuesto3":0,"Impuesto4":12,"Desc1":0,"Desc2":0,"Tipcam":1,"Univen":1,"Tipprod":"S","Lote":null,"Preciou":49.00000000000001,"Totalpartida":49.00000000000001,"Observacion":""}]}
+
+19/05/2022 09:28:14
+Error al subir un pedido: An error occurred while updating the entries. See the inner exception for details.
+
+19/05/2022 09:28:49
+ID del usuario: 1
+UI del documento: aeb36354-aafe-3ada-815a-aecb7e1cfc8d
+Desde : Fragment3
+FechaDoc : 2022-05-19 09:22:38.634
+Json Recibido: {"Id":0,"Idws":0,"Cvedoc":null,"Tipdoc":"F","Serie":"FN","Cliente":"         1","Idclie":1,"Fecha":"2022-05-19 09:22:38.634","Fechaen":null,"Vendedor":"     ","Esquema":0,"Supedido":"8855","Condicion":null,"Canttot":2255.3562899999997,"Impuesto1":0,"Impuesto2":0,"Impuesto3":0,"Impuesto4":270.64275480000003,"Descuento":0,"Total":2525.9990448000003,"Rfc":"37255436","Ensistema":null,"Fechasub":null,"Observacion":"tiene una observaci\u00F3n\npara subir el json","Nombreclie":"CARLOS ANDRES CORDOVA","Dirclie":null,"Clocation":"","Transporte":"","Direntrega":"","Iduser":1,"Noalmacen":0,"Uidev":"aeb36354-aafe-3ada-815a-aecb7e1cfc8d","Enviadesde":"Fragment3","Detalles":[{"Id":0,"Pedido":0,"NoPartida":0,"Cantidad":9,"Cantxuv":1,"Cveart":"JNRJT-001","Descr":"JUGO NARANJA TAMPICO 480ML","Precio":2.67857,"Apartado":0,"Serie":"","Esquema":1,"Linea":0,"Politica":0,"Impuesto1":0,"Impuesto2":0,"Impuesto3":0,"Impuesto4":12,"Desc1":0,"Desc2":0,"Tipcam":1,"Univen":1,"Tipprod":"P","Lote":null,"Preciou":2.9999984000000004,"Totalpartida":26.999985600000002,"Observacion":""},{"Id":0,"Pedido":0,"NoPartida":0,"Cantidad":98,"Cantxuv":1,"Cveart":"VIT01","Descr":"VITAMINA E 400U","Precio":22.32142,"Apartado":0,"Serie":"","Esquema":1,"Linea":0,"Politica":0,"Impuesto1":0,"Impuesto2":0,"Impuesto3":0,"Impuesto4":12,"Desc1":0,"Desc2":0,"Tipcam":1,"Univen":1,"Tipprod":"P","Lote":null,"Preciou":24.9999904,"Totalpartida":2449.9990592000004,"Observacion":""},{"Id":0,"Pedido":0,"NoPartida":0,"Cantidad":1,"Cantxuv":1,"Cveart":"S001","Descr":"SERVICIO DE FLETE","Precio":43.75,"Apartado":0,"Serie":"","Esquema":1,"Linea":0,"Politica":0,"Impuesto1":0,"Impuesto2":0,"Impuesto3":0,"Impuesto4":12,"Desc1":0,"Desc2":0,"Tipcam":1,"Univen":1,"Tipprod":"S","Lote":null,"Preciou":49.00000000000001,"Totalpartida":49.00000000000001,"Observacion":""}]}
+
+Documento encontrado y devuelto: 29
+
+23/05/2022 21:27:20
+ID del usuario: 1
+UI del documento: aeb36354-aafe-3ada-815a-aecb7e1cfc8c
+Desde : Fragment3
+FechaDoc : 2022-05-19 09:22:38.634
+Json Recibido: {"Id":0,"Idws":0,"Cvedoc":null,"Tipdoc":"F","Serie":"FN","Cliente":"         1","Idclie":1,"Fecha":"2022-05-19 09:22:38.634","Fechaen":null,"Vendedor":"     ","Esquema":0,"Supedido":"8855","Condicion":null,"Canttot":2255.3562899999997,"Impuesto1":0,"Impuesto2":0,"Impuesto3":0,"Impuesto4":270.64275480000003,"Descuento":0,"Total":2525.9990448000003,"Rfc":"37255436","Ensistema":null,"Fechasub":null,"Observacion":"tiene una observaci\u00F3n\npara subir el json","Nombreclie":"CARLOS ANDRES CORDOVA","Dirclie":null,"Clocation":"","Transporte":"","Direntrega":"","Iduser":1,"Noalmacen":0,"Uidev":"aeb36354-aafe-3ada-815a-aecb7e1cfc8c","Enviadesde":"Fragment3","Detalles":[{"Id":0,"Pedido":0,"NoPartida":0,"Cantidad":9,"Cantxuv":1,"Cveart":"JNRJT-001","Descr":"JUGO NARANJA TAMPICO 480ML","Precio":2.67857,"Apartado":0,"Serie":"","Esquema":1,"Linea":0,"Politica":0,"Impuesto1":0,"Impuesto2":0,"Impuesto3":0,"Impuesto4":12,"Desc1":0,"Desc2":0,"Tipcam":1,"Univen":1,"Tipprod":"P","Lote":null,"Preciou":2.9999984000000004,"Totalpartida":26.999985600000002,"Observacion":""},{"Id":0,"Pedido":0,"NoPartida":0,"Cantidad":98,"Cantxuv":1,"Cveart":"VIT01","Descr":"VITAMINA E 400U","Precio":22.32142,"Apartado":0,"Serie":"","Esquema":1,"Linea":0,"Politica":0,"Impuesto1":0,"Impuesto2":0,"Impuesto3":0,"Impuesto4":12,"Desc1":0,"Desc2":0,"Tipcam":1,"Univen":1,"Tipprod":"P","Lote":null,"Preciou":24.9999904,"Totalpartida":2449.9990592000004,"Observacion":""},{"Id":0,"Pedido":0,"NoPartida":0,"Cantidad":1,"Cantxuv":1,"Cveart":"S001","Descr":"SERVICIO DE FLETE","Precio":43.75,"Apartado":0,"Serie":"","Esquema":1,"Linea":0,"Politica":0,"Impuesto1":0,"Impuesto2":0,"Impuesto3":0,"Impuesto4":12,"Desc1":0,"Desc2":0,"Tipcam":1,"Univen":1,"Tipprod":"S","Lote":null,"Preciou":49.00000000000001,"Totalpartida":49.00000000000001,"Observacion":""}]}
+
+Documento encontrado y devuelto: 28
+
+31/05/2022 17:09:00
+ID del usuario: 3
+UI del documento: 3cda6683-e6c6-3521-97fa-7b142a470593
+Desde : POSPAGO
+FechaDoc : 2022-05-31 17:09:00.882
+Json Recibido: {"Id":0,"Idws":0,"Cvedoc":null,"Tipdoc":"F","Serie":null,"Cliente":"         1","Idclie":1,"Fecha":"2022-05-31 17:09:00.882","Fechaen":"2022-05-31 17:09:00.882","Vendedor":"    2","Esquema":1,"Supedido":null,"Condicion":null,"Canttot":46.43,"Impuesto1":0,"Impuesto2":0,"Impuesto3":0,"Impuesto4":5.57142857142857,"Descuento":0,"Total":52,"Rfc":"37255436","Ensistema":null,"Fechasub":null,"Observacion":null,"Nombreclie":"CARLOS ANDRES CORDOVA","Dirclie":"7 CALLE 2-07 ZONA 1, ALDEA SAN LORENZO EL CUBO, CIUDAD VIEJA","Clocation":null,"Transporte":null,"Direntrega":null,"Iduser":3,"Noalmacen":1,"Uidev":"3cda6683-e6c6-3521-97fa-7b142a470593","Enviadesde":"POSPAGO","Detalles":[{"Id":0,"Pedido":0,"NoPartida":0,"Cantidad":1,"Cantxuv":1,"Cveart":"JNRJT-001","Descr":"JUGO NARANJA TAMPICO 480ML","Precio":2.68,"Apartado":0,"Serie":null,"Esquema":1,"Linea":0,"Politica":0,"Impuesto1":0,"Impuesto2":0,"Impuesto3":0,"Impuesto4":12,"Desc1":0,"Desc2":0,"Tipcam":1,"Univen":1,"Tipprod":"P","Lote":null,"Preciou":3,"Totalpartida":3,"Observacion":null},{"Id":0,"Pedido":0,"NoPartida":0,"Cantidad":1,"Cantxuv":1,"Cveart":"S001","Descr":"SERVICIO DE FLETE","Precio":43.75,"Apartado":0,"Serie":null,"Esquema":1,"Linea":0,"Politica":0,"Impuesto1":0,"Impuesto2":0,"Impuesto3":0,"Impuesto4":12,"Desc1":0,"Desc2":0,"Tipcam":1,"Univen":1,"Tipprod":"S","Lote":null,"Preciou":49,"Totalpartida":49,"Observacion":null}]}
+
+31/05/2022 17:09:00
+Error al correr procedimiento SQL: No se puede insertar el valor NULL en la columna 'CVE_DOC', tabla 'CAPACITACIONES.dbo.FACTF01'. La columna no admite valores NULL. Error de INSERT.
+No se puede insertar el valor NULL en la columna 'REFER', tabla 'CAPACITACIONES.dbo.CUEN_M01'. La columna no admite valores NULL. Error de INSERT.
+No se puede insertar el valor NULL en la columna 'CVE_DOC', tabla 'CAPACITACIONES.dbo.PAR_FACTF01'. La columna no admite valores NULL. Error de INSERT.
+No se puede insertar el valor NULL en la columna 'CVE_DOC', tabla 'CAPACITACIONES.dbo.PAR_FACTF01'. La columna no admite valores NULL. Error de INSERT.
+ID:30
+ 
+ 
+Se terminó la instrucción.
+Se terminó la instrucción.
+PRODUCTO:JNRJT-001
+CANT:    1
+Se terminó la instrucción.
+PRODUCTO:S001
+CANT:    1
+Se terminó la instrucción.
+
+31/05/2022 17:09:01
+Error al subir un pedido: An error occurred while updating the entries. See the inner exception for details.
+
+31/05/2022 17:18:11
+ID del usuario: 3
+UI del documento: 3cda6683-e6c6-3521-97fa-7b142a470593
+Desde : POSPAGO
+FechaDoc : 2022-05-31 17:09:00.882
+Json Recibido: {"Id":0,"Idws":0,"Cvedoc":null,"Tipdoc":"F","Serie":null,"Cliente":"         1","Idclie":1,"Fecha":"2022-05-31 17:09:00.882","Fechaen":"2022-05-31 17:09:00.882","Vendedor":"    2","Esquema":1,"Supedido":null,"Condicion":null,"Canttot":46.43,"Impuesto1":0,"Impuesto2":0,"Impuesto3":0,"Impuesto4":5.57142857142857,"Descuento":0,"Total":52,"Rfc":"37255436","Ensistema":null,"Fechasub":null,"Observacion":null,"Nombreclie":"CARLOS ANDRES CORDOVA","Dirclie":"7 CALLE 2-07 ZONA 1, ALDEA SAN LORENZO EL CUBO, CIUDAD VIEJA","Clocation":null,"Transporte":null,"Direntrega":null,"Iduser":3,"Noalmacen":1,"Uidev":"3cda6683-e6c6-3521-97fa-7b142a470593","Enviadesde":"POSPAGO","Detalles":[{"Id":0,"Pedido":0,"NoPartida":0,"Cantidad":1,"Cantxuv":1,"Cveart":"JNRJT-001","Descr":"JUGO NARANJA TAMPICO 480ML","Precio":2.68,"Apartado":0,"Serie":null,"Esquema":1,"Linea":0,"Politica":0,"Impuesto1":0,"Impuesto2":0,"Impuesto3":0,"Impuesto4":12,"Desc1":0,"Desc2":0,"Tipcam":1,"Univen":1,"Tipprod":"P","Lote":null,"Preciou":3,"Totalpartida":3,"Observacion":null},{"Id":0,"Pedido":0,"NoPartida":0,"Cantidad":1,"Cantxuv":1,"Cveart":"S001","Descr":"SERVICIO DE FLETE","Precio":43.75,"Apartado":0,"Serie":null,"Esquema":1,"Linea":0,"Politica":0,"Impuesto1":0,"Impuesto2":0,"Impuesto3":0,"Impuesto4":12,"Desc1":0,"Desc2":0,"Tipcam":1,"Univen":1,"Tipprod":"S","Lote":null,"Preciou":49,"Totalpartida":49,"Observacion":null}]}
+
+Documento encontrado y devuelto: 30
+
+31/05/2022 17:18:58
+ID del usuario: 3
+UI del documento: 4162ee8a-a07a-3aa8-9f75-dae562c08021
+Desde : POSPAGO
+FechaDoc : 2022-05-31 17:18:56.991
+Json Recibido: {"Id":0,"Idws":0,"Cvedoc":null,"Tipdoc":"F","Serie":null,"Cliente":"0","Idclie":0,"Fecha":"2022-05-31 17:18:56.991","Fechaen":"2022-05-31 17:18:56.991","Vendedor":"    2","Esquema":1,"Supedido":null,"Condicion":null,"Canttot":300,"Impuesto1":0,"Impuesto2":0,"Impuesto3":0,"Impuesto4":0,"Descuento":0,"Total":300,"Rfc":"CF","Ensistema":null,"Fechasub":null,"Observacion":null,"Nombreclie":"CONSUMIDOR FINAL","Dirclie":"","Clocation":null,"Transporte":null,"Direntrega":null,"Iduser":3,"Noalmacen":1,"Uidev":"4162ee8a-a07a-3aa8-9f75-dae562c08021","Enviadesde":"POSPAGO","Detalles":[{"Id":0,"Pedido":0,"NoPartida":0,"Cantidad":3,"Cantxuv":1,"Cveart":"S002","Descr":"DONACION","Precio":100,"Apartado":0,"Serie":null,"Esquema":3,"Linea":0,"Politica":0,"Impuesto1":0,"Impuesto2":0,"Impuesto3":0,"Impuesto4":0,"Desc1":0,"Desc2":0,"Tipcam":1,"Univen":1,"Tipprod":"S","Lote":null,"Preciou":100,"Totalpartida":300,"Observacion":null}]}
+
+31/05/2022 17:18:59
+Error al correr procedimiento SQL: No se puede insertar el valor NULL en la columna 'CVE_DOC', tabla 'CAPACITACIONES.dbo.FACTF01'. La columna no admite valores NULL. Error de INSERT.
+No se puede insertar el valor NULL en la columna 'REFER', tabla 'CAPACITACIONES.dbo.CUEN_M01'. La columna no admite valores NULL. Error de INSERT.
+No se puede insertar el valor NULL en la columna 'CVE_DOC', tabla 'CAPACITACIONES.dbo.PAR_FACTF01'. La columna no admite valores NULL. Error de INSERT.
+ID:31
+ 
+ 
+Se terminó la instrucción.
+Se terminó la instrucción.
+PRODUCTO:S002
+CANT:    3
+Se terminó la instrucción.
+
+Documento creado: 31
+
+8/06/2022 10:58:45
+ID del usuario: 1
+UI del documento: 5dbcb10c-cb30-3716-9089-e1c581e65b0b
+Desde : Fragment3
+FechaDoc : 2022-06-08 10:58:13.536
+Json Recibido: {"Id":0,"Idws":0,"Cvedoc":null,"Tipdoc":"P","Serie":"STAND.","Cliente":"         5","Idclie":6,"Fecha":"2022-06-08 10:58:13.536","Fechaen":null,"Vendedor":"     ","Esquema":0,"Supedido":"test","Condicion":null,"Canttot":80.27676,"Impuesto1":0,"Impuesto2":0,"Impuesto3":0,"Impuesto4":9.6332112,"Descuento":0,"Total":89.9099712,"Rfc":"CF","Ensistema":null,"Fechasub":null,"Observacion":"test para clientes","Nombreclie":"CLIENTE \u0022CON COMILLAS\u0022","Dirclie":null,"Clocation":"","Transporte":"","Direntrega":"","Iduser":1,"Noalmacen":0,"Uidev":"5dbcb10c-cb30-3716-9089-e1c581e65b0b","Enviadesde":"Fragment3","Detalles":[{"Id":0,"Pedido":0,"NoPartida":0,"Cantidad":9,"Cantxuv":1,"Cveart":"PRO01","Descr":"PRODUCTO A PROBAR EN CLIENTES","Precio":8.91964,"Apartado":0,"Serie":"","Esquema":1,"Linea":0,"Politica":0,"Impuesto1":0,"Impuesto2":0,"Impuesto3":0,"Impuesto4":12,"Desc1":0,"Desc2":0,"Tipcam":1,"Univen":1,"Tipprod":"P","Lote":null,"Preciou":9.9899968,"Totalpartida":89.9099712,"Observacion":""}]}
+
+Documento creado: 32
+
+8/06/2022 14:20:16
+ID del usuario: 3
+UI del documento: 0b7fb6ce-b1f8-3e87-8b42-3ab9f521ff60
+Desde : POSPAGO
+FechaDoc : 2022-06-08 14:20:17.699
+Json Recibido: {"Id":0,"Idws":0,"Cvedoc":null,"Tipdoc":"F","Serie":null,"Cliente":"MOSTR","Idclie":0,"Fecha":"2022-06-08 14:20:17.699","Fechaen":"2022-06-08 14:20:17.699","Vendedor":null,"Esquema":0,"Supedido":null,"Condicion":null,"Canttot":17.84,"Impuesto1":0,"Impuesto2":0,"Impuesto3":0,"Impuesto4":2.140714285714285,"Descuento":0,"Total":19.98,"Rfc":"CF","Ensistema":null,"Fechasub":null,"Observacion":null,"Nombreclie":"CONSUMIDOR FINAL","Dirclie":null,"Clocation":null,"Transporte":null,"Direntrega":null,"Iduser":3,"Noalmacen":1,"Uidev":"0b7fb6ce-b1f8-3e87-8b42-3ab9f521ff60","Enviadesde":"POSPAGO","Detalles":[{"Id":0,"Pedido":0,"NoPartida":0,"Cantidad":2,"Cantxuv":1,"Cveart":"PRO01","Descr":"PRODUCTO A PROBAR EN CLIENTES","Precio":8.92,"Apartado":0,"Serie":null,"Esquema":1,"Linea":0,"Politica":0,"Impuesto1":0,"Impuesto2":0,"Impuesto3":0,"Impuesto4":12,"Desc1":0,"Desc2":0,"Tipcam":1,"Univen":1,"Tipprod":"P","Lote":null,"Preciou":9.99,"Totalpartida":19.98,"Observacion":null}]}
+
+8/06/2022 14:20:17
+Error al correr procedimiento SQL: No se puede insertar el valor NULL en la columna 'CVE_DOC', tabla 'CAPACITACIONES.dbo.FACTF01'. La columna no admite valores NULL. Error de INSERT.
+No se puede insertar el valor NULL en la columna 'REFER', tabla 'CAPACITACIONES.dbo.CUEN_M01'. La columna no admite valores NULL. Error de INSERT.
+No se puede insertar el valor NULL en la columna 'CVE_DOC', tabla 'CAPACITACIONES.dbo.PAR_FACTF01'. La columna no admite valores NULL. Error de INSERT.
+ID:33
+ 
+ 
+Se terminó la instrucción.
+Se terminó la instrucción.
+PRODUCTO:PRO01
+CANT:    2
+Se terminó la instrucción.
+
+Documento creado: 33
+
+8/06/2022 14:28:42
+ID del usuario: 1
+UI del documento: 716543a6-07b1-3e4f-a57d-46c69d21ce2e
+Desde : Fragment3
+FechaDoc : 2022-06-08 14:27:35.902
+Json Recibido: {"Id":0,"Idws":0,"Cvedoc":null,"Tipdoc":"F","Serie":"FN","Cliente":"         5","Idclie":6,"Fecha":"2022-06-08 14:27:35.902","Fechaen":null,"Vendedor":"     ","Esquema":0,"Supedido":"jfjfk","Condicion":null,"Canttot":465.17843,"Impuesto1":0,"Impuesto2":0,"Impuesto3":0,"Impuesto4":31.821411599999998,"Descuento":0,"Total":496.9998416,"Rfc":"CF","Ensistema":null,"Fechasub":null,"Observacion":"","Nombreclie":"CLIENTE \u0022CON COMILLAS\u0022","Dirclie":null,"Clocation":"","Transporte":"","Direntrega":"","Iduser":1,"Noalmacen":0,"Uidev":"716543a6-07b1-3e4f-a57d-46c69d21ce2e","Enviadesde":"Fragment3","Detalles":[{"Id":0,"Pedido":0,"NoPartida":0,"Cantidad":99,"Cantxuv":1,"Cveart":"JNRJT-001","Descr":"JUGO NARANJA TAMPICO 480ML","Precio":2.67857,"Apartado":0,"Serie":"","Esquema":1,"Linea":0,"Politica":0,"Impuesto1":0,"Impuesto2":0,"Impuesto3":0,"Impuesto4":12,"Desc1":0,"Desc2":0,"Tipcam":1,"Univen":1,"Tipprod":"P","Lote":null,"Preciou":2.9999984000000004,"Totalpartida":296.9998416,"Observacion":""},{"Id":0,"Pedido":0,"NoPartida":0,"Cantidad":2,"Cantxuv":1,"Cveart":"S002","Descr":"DONACION","Precio":100,"Apartado":0,"Serie":"","Esquema":3,"Linea":0,"Politica":0,"Impuesto1":0,"Impuesto2":0,"Impuesto3":0,"Impuesto4":0,"Desc1":0,"Desc2":0,"Tipcam":1,"Univen":1,"Tipprod":"S","Lote":null,"Preciou":100,"Totalpartida":200,"Observacion":""}]}
+
+Documento creado: 34
+
+8/06/2022 14:40:36
+ID del usuario: 1
+UI del documento: 631cd967-1039-39e8-aaea-cf33c09b5699
+Desde : Fragment3
+FechaDoc : 2022-06-08 14:37:20.287
+Json Recibido: {"Id":0,"Idws":0,"Cvedoc":null,"Tipdoc":"F","Serie":"FCA","Cliente":"         1","Idclie":1,"Fecha":"2022-06-08 14:37:20.287","Fechaen":null,"Vendedor":"     ","Esquema":0,"Supedido":"test","Condicion":null,"Canttot":758.1694,"Impuesto1":0,"Impuesto2":0,"Impuesto3":0,"Impuesto4":90.98032799999999,"Descuento":0,"Total":849.149728,"Rfc":"37255436","Ensistema":null,"Fechasub":null,"Observacion":"probando fel","Nombreclie":"CARLOS ANDRES CORDOVA","Dirclie":null,"Clocation":"","Transporte":"","Direntrega":"","Iduser":1,"Noalmacen":0,"Uidev":"631cd967-1039-39e8-aaea-cf33c09b5699","Enviadesde":"Fragment3","Detalles":[{"Id":0,"Pedido":0,"NoPartida":0,"Cantidad":85,"Cantxuv":1,"Cveart":"PRO01","Descr":"PRODUCTO A PROBAR EN CLIENTES","Precio":8.91964,"Apartado":0,"Serie":"","Esquema":1,"Linea":0,"Politica":0,"Impuesto1":0,"Impuesto2":0,"Impuesto3":0,"Impuesto4":12,"Desc1":0,"Desc2":0,"Tipcam":1,"Univen":1,"Tipprod":"P","Lote":null,"Preciou":9.9899968,"Totalpartida":849.149728,"Observacion":""}]}
+
+Documento creado: 35
+

@@ -745,8 +745,8 @@ namespace SSCASPEL.Controllers
 
                             DatoFEL dfel = new DatoFEL();
                             dfel.Id = enc.Id;
-                            dfel.Serie = "con serie " + enc.Id;
-                            dfel.Numero = enc.Id.ToString();
+                            dfel.Serie = GenerateRandomString(8);
+                            dfel.Numero = GenerateRandomNumber(10);
                             string uuid = System.Guid.NewGuid().ToString();
                             dfel.Numeroaut = uuid.ToUpper();
                             dfel.Tipofel = "FACTURA CAMBIARIA";
@@ -756,7 +756,8 @@ namespace SSCASPEL.Controllers
                             dfel.Moneda = "GTQ";
                             dfel.Certificador = "INFILE";
                             dfel.Nitcert = "125200";
-
+                            System.Diagnostics.Debug.WriteLine("Serie:: " + dfel.Serie);
+                            System.Diagnostics.Debug.WriteLine("Numero:: " + dfel.Numero);
 
                             _context.DatoFel.Add(dfel);
                             await _context.SaveChangesAsync();
@@ -1455,6 +1456,21 @@ namespace SSCASPEL.Controllers
 
 
 
+        }
+
+        public String GenerateRandomString(int length)
+        {
+            var chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
+            var random = new Random();
+            var list = Enumerable.Repeat(0, length).Select(x => chars[random.Next(chars.Length)]);
+            return string.Join("", list);
+        }
+        public String GenerateRandomNumber(int length)
+        {
+            var chars = "0123456789";
+            var random = new Random();
+            var list = Enumerable.Repeat(0, length).Select(x => chars[random.Next(chars.Length)]);
+            return string.Join("", list);
         }
     }
 
